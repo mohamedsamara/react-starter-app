@@ -1,0 +1,26 @@
+{
+  "name": "react-starter-app",
+  "version": "1.0.0",
+  "description": "React Starter Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsamara/React-Starter-App.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "redux-thunk",
+    "sass",
+    "less"
+  ],
+  "author": "Mohamed Samara (https://github.com/mohamedsamara)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedsamara/React-Starter-App/issues"
+  },
+  "homepage": "https://github.com/mohamedsamara/React-Starter-App"
+}
