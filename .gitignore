@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# Production
+/dist
+
+# Cruft
+.DS_Store
+npm-debug.log
+.vscode

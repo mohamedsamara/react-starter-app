@@ -1,0 +1,217 @@
+// theme styles
+
+// button styles
+button,
+input,
+select {
+  &:focus {
+    outline: none;
+  }
+}
+
+// input style
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='date'] {
+  background-color: $white;
+  border: $border-default;
+  color: $font-color;
+  font-size: $font-size-small;
+  padding: 8px 10px;
+  width: 100px;
+
+  &:focus {
+    border-width: 2px;
+    color: $focus-font-color;
+    outline: none;
+  }
+}
+
+.input-box {
+  margin: 15px 0;
+
+  label {
+    font-weight: $font-weight-bold-light;
+    margin-bottom: 5px;
+  }
+}
+
+// radio button style
+.radio-box {
+  position: relative;
+
+  input[type='radio'] {
+    cursor: pointer;
+    height: 17px;
+    left: 0;
+    margin-right: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 17px;
+    z-index: 100;
+
+    &:checked + label {
+      &:after {
+        background-color: $white;
+        color: $theme-black;
+        content: '\f00c';
+        font-family: 'FontAwesome';
+        font-size: $font-size-small;
+        line-height: 17px;
+        text-align: center;
+      }
+    }
+  }
+
+  label {
+    cursor: pointer;
+    font-weight: $font-weight-bold-light;
+    padding-left: 25px;
+    position: relative;
+
+    &:before {
+      content: '';
+      height: 17px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 17px;
+    }
+
+    &:after {
+      border: $border-default;
+      border-radius: 25px;
+      content: '';
+      height: 17px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 17px;
+    }
+  }
+}
+
+// textarea style
+textarea {
+  background-color: $white;
+  border: $border-default;
+  color: $font-color;
+  font-size: $font-size-small;
+  max-height: 200px;
+  min-height: 100px;
+  padding: 8px 10px;
+  width: 100%;
+
+  &:focus {
+    border-width: 2px;
+    color: $focus-font-color;
+    outline: none;
+  }
+}
+
+.textarea-box {
+  margin: 8px 0;
+
+  label {
+    font-weight: $font-weight-bold-light;
+    margin-bottom: 5px;
+  }
+}
+
+// datepicker style
+.date-box {
+  margin: 8px 0;
+
+  label {
+    font-weight: $font-weight-bold-light;
+  }
+}
+
+// select field style
+.select-field-box {
+  margin: 8px 0;
+
+  label {
+    font-weight: $font-weight-bold-light;
+  }
+}
+
+// dropdown style
+.dropdown-box {
+  margin: 8px 0;
+
+  label {
+    font-weight: $font-weight-bold-light;
+    margin-bottom: 5px;
+  }
+}
+
+// number picker style
+.number-box {
+  border: $border-default;
+  display: inline-block;
+  margin: 8px 0;
+
+  /* Remove controls from Safari and Chrome */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Removes leftover margin */
+  }
+
+  input[type='number'] {
+    border: none;
+    float: left;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    width: 60px;
+    -moz-appearance: textfield;
+
+    &:focus {
+      color: $focus-font-color;
+      outline: none;
+    }
+  }
+}
+
+// error messages style
+.has-danger {
+  border-color: $theme-red !important;
+  border-width: 1px !important;
+}
+
+// disabled inputs
+input[type] {
+  &:disabled {
+    background-color: $theme-white;
+    cursor: not-allowed;
+  }
+}
+
+// label class style
+.label {
+  font-weight: $font-weight-bold-light;
+}
+
+// separator
+.separator {
+  background-color: $separator-color;
+  border: none;
+  height: 1px;
+  margin: 15px 0;
+}
+
+// img avatar
+.img-avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+// multi column padding
+.col-no-padding {
+  padding: 0 !important;
+}
