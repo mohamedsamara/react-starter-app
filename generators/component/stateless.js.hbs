@@ -1,0 +1,41 @@
+/**
+*
+* {{ properCase name }}
+*
+*/
+
+
+import React from 'react';
+{{#if wantProptypes}}
+import PropTypes from 'prop-types';
+{{/if}}
+{{#if wantMessages}}
+import { FormattedMessage } from 'react-intl';
+
+import messages from './messages';
+{{/if}}
+{{#if wantCSS}}
+import styles from './styles.css';
+{{/if}}
+
+const {{ properCase name }} = props => {
+  return (
+    {{#if wantCSS}}
+    <div className={{curly true}}styles.{{ camelCase name }}{{curly}}>
+    {{else}}
+    <div>
+    {{/if}}
+    {{#if wantMessages}}
+      <FormattedMessage {...messages.header} />
+    {{/if}}
+    </div>
+  );
+}
+
+{{#if wantProptypes}}
+  const { bool } = PropTypes;
+  {{ properCase name }}.propTypes = {};
+{{/if}}
+
+
+export default {{ properCase name }};

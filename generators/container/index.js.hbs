@@ -1,0 +1,77 @@
+/*
+ * 
+ * {{properCase name }}
+ *
+ */
+
+
+import React from 'react';
+import { connect } from 'react-redux';
+{{#if wantProptypes}}
+import PropTypes from 'prop-types';
+{{/if}}
+{{#if wantHeaders}}
+import { Helmet } from 'react-helmet';
+{{/if}}
+{{#if wantMessages}}
+import { FormattedMessage } from 'react-intl';
+{{/if}}
+
+{{#if wantActionsAndReducer}}
+import actions from '../../actions.js';
+{{/if}}
+{{#if wantMessages}}
+import messages from './messages';
+{{/if}}
+{{#if wantCSS}}
+import styles from './styles.css';
+{{/if}}
+
+export class {{ properCase name }} extends React.Component {
+
+  componentDidMount() {
+  }
+
+  render() {
+    return (
+      {{#if wantCSS}}
+      <div className={{curly true}}styles.{{ camelCase name }}{{curly}}>
+      {{else}}
+      <div>
+      {{/if}}
+      {{#if wantHeaders}}
+      <Helmet
+        title="{{properCase name}}"
+        meta={{curly true}}[
+          {{curly true}} name: 'description', content: 'Description of {{properCase name}}' {{curly}},
+        ]{{curly}}
+      />
+      {{/if}}
+      {{#if wantMessages}}
+        <FormattedMessage {...messages.header} />
+      {{/if}}
+      </div>
+    );
+  }
+}
+
+{{#if wantProptypes}}
+  const { bool } = PropTypes;
+  {{ properCase name }}.propTypes = {};
+{{/if}}
+
+
+
+{{#if wantActionsAndReducer}}
+const mapStateToProps = (state) => {
+    return {
+        state,
+    };
+};
+{{/if}}
+
+{{#if wantActionsAndReducer}}
+export default connect(mapStateToProps, actions)({{ properCase name }});
+{{else}}
+export default connect(actions)({{ properCase name }});
+{{/if}}
