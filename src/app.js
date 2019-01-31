@@ -5,7 +5,12 @@
  */
 
 import React from 'react';
+import { Provider } from 'react-redux';
 import { hot } from 'react-hot-loader';
+import { ConnectedRouter } from 'connected-react-router';
+
+import store, { history } from './store';
+import Application from './containers/Application';
 
 // Import application sass styles
 import './styles/sass/style.scss';
@@ -28,6 +33,12 @@ import 'sanitize.css/sanitize.css';
 // react-redux-toastr Notifications
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
 
-const app = () => <div>React JS Works!</div>;
+const app = () => (
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <Application />
+    </ConnectedRouter>
+  </Provider>
+);
 
 export default hot(module)(app);
