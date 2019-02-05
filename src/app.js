@@ -6,11 +6,11 @@
 
 import React from 'react';
 import { Provider } from 'react-redux';
-import { hot } from 'react-hot-loader';
 import { ConnectedRouter } from 'connected-react-router';
+import { hot } from 'react-hot-loader';
 
 import store, { history } from './store';
-import Application from './containers/Application';
+import Routes from './routes/routes';
 
 // Import application sass styles
 import './styles/sass/style.scss';
@@ -36,7 +36,7 @@ import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
 const app = () => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <Application />
+      <Routes />
     </ConnectedRouter>
   </Provider>
 );
