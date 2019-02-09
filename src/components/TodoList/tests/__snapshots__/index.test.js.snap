@@ -41,14 +41,14 @@ exports[`<TodoList /> should <TodoList> render correctly 1`] = `
         className="MuiCardActionArea-focusHighlight-32"
       />
       <span
-        className="MuiTouchRipple-root-100"
+        className="MuiTouchRipple-root-102"
       />
     </button>
     <div
-      className="MuiCardActions-root-72"
+      className="MuiCardActions-root-73"
     >
       <button
-        className="MuiButtonBase-root-33 MuiButton-root-74 MuiButton-text-76 MuiButton-textPrimary-77 MuiButton-flat-79 MuiButton-flatPrimary-80 MuiButton-sizeSmall-97 MuiCardActions-action-73"
+        className="MuiButtonBase-root-33 MuiButton-root-76 MuiButton-text-78 MuiButton-textPrimary-79 MuiButton-flat-81 MuiButton-flatPrimary-82 MuiButton-sizeSmall-99 MuiCardActions-action-75"
         disabled={false}
         onBlur={[Function]}
         onContextMenu={[Function]}
@@ -65,12 +65,12 @@ exports[`<TodoList /> should <TodoList> render correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-75"
+          className="MuiButton-label-77"
         >
           Not completed
         </span>
         <span
-          className="MuiTouchRipple-root-100"
+          className="MuiTouchRipple-root-102"
         />
       </button>
     </div>
@@ -112,14 +112,14 @@ exports[`<TodoList /> should <TodoList> render correctly 1`] = `
         className="MuiCardActionArea-focusHighlight-32"
       />
       <span
-        className="MuiTouchRipple-root-100"
+        className="MuiTouchRipple-root-102"
       />
     </button>
     <div
-      className="MuiCardActions-root-72"
+      className="MuiCardActions-root-73"
     >
       <button
-        className="MuiButtonBase-root-33 MuiButton-root-74 MuiButton-text-76 MuiButton-textPrimary-77 MuiButton-flat-79 MuiButton-flatPrimary-80 MuiButton-sizeSmall-97 MuiCardActions-action-73"
+        className="MuiButtonBase-root-33 MuiButton-root-76 MuiButton-text-78 MuiButton-textPrimary-79 MuiButton-flat-81 MuiButton-flatPrimary-82 MuiButton-sizeSmall-99 MuiCardActions-action-75"
         disabled={false}
         onBlur={[Function]}
         onContextMenu={[Function]}
@@ -136,12 +136,12 @@ exports[`<TodoList /> should <TodoList> render correctly 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-75"
+          className="MuiButton-label-77"
         >
           Not completed
         </span>
         <span
-          className="MuiTouchRipple-root-100"
+          className="MuiTouchRipple-root-102"
         />
       </button>
     </div>

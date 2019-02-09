@@ -4,18 +4,43 @@ exports[`<PostList /> should <PostList> render correctly 1`] = `
 <div
   className="postList"
 >
-  <div>
+  <div
+    className="PostList-root-1"
+  >
     <div
-      className="PostList-root-1"
+      className="MuiPaper-root-9 MuiPaper-elevation1-12 MuiPaper-rounded-10 MuiExpansionPanel-root-5 MuiExpansionPanel-rounded-6 PostList-accordionSpace-3 PostList-expanded-2"
     >
       <div
-        className="MuiPaper-root-8 MuiPaper-elevation1-11 MuiExpansionPanel-root-5 PostList-accordionSpace-3 PostList-expanded-2"
+        aria-expanded={false}
+        className="MuiButtonBase-root-42 MuiExpansionPanelSummary-root-36"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
       >
         <div
-          aria-expanded={false}
-          className="MuiButtonBase-root-41 MuiExpansionPanelSummary-root-35"
+          className="MuiExpansionPanelSummary-content-40"
+        >
+          <p
+            className="MuiTypography-root-45 MuiTypography-body1-54 PostList-heading-4"
+          >
+            sunt aut facere repellat provident occaecati excepturi optio reprehenderit
+          </p>
+        </div>
+        <div
+          aria-hidden="true"
+          className="MuiButtonBase-root-42 MuiIconButton-root-81 MuiExpansionPanelSummary-expandIcon-41"
           onBlur={[Function]}
-          onClick={[Function]}
           onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -27,176 +52,176 @@ exports[`<PostList /> should <PostList> render correctly 1`] = `
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           role="button"
-          tabIndex="0"
+          tabIndex={-1}
         >
-          <div
-            className="MuiExpansionPanelSummary-content-39"
+          <span
+            className="MuiIconButton-label-86"
           >
-            <p
-              className="MuiTypography-root-44 MuiTypography-body1-53 PostList-heading-4"
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-87"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              sunt aut facere repellat provident occaecati excepturi optio reprehenderit
-            </p>
-          </div>
-          <div
-            aria-hidden="true"
-            className="MuiButtonBase-root-41 MuiIconButton-root-79 MuiExpansionPanelSummary-expandIcon-40"
-            onBlur={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={-1}
-          >
-            <span
-              className="MuiIconButton-label-84"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-85"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-            <span
-              className="MuiTouchRipple-root-132"
-            />
-          </div>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-134"
+          />
         </div>
-        <div
-          aria-hidden="true"
-          className="MuiCollapse-container-94"
-          style={
-            Object {
-              "minHeight": "0px",
-            }
+      </div>
+      <div
+        aria-hidden="true"
+        className="MuiCollapse-container-96"
+        style={
+          Object {
+            "minHeight": "0px",
           }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper-98"
         >
           <div
-            className="MuiCollapse-wrapper-96"
+            className="MuiCollapse-wrapperInner-99"
           >
             <div
-              className="MuiCollapse-wrapperInner-97"
+              className="MuiExpansionPanelDetails-root-100"
             >
-              <div
-                className="MuiExpansionPanelDetails-root-98"
+              <p
+                className="MuiTypography-root-45 MuiTypography-body1-54"
               >
-                <p
-                  className="MuiTypography-root-44 MuiTypography-body1-53"
-                >
-                  quia et suscipit
+                quia et suscipit
 suscipit recusandae consequuntur expedita et cum
 reprehenderit molestiae ut ut quas totam
 nostrum rerum est autem sunt rem eveniet architecto
-                </p>
-              </div>
-              <hr
-                className="MuiDivider-root-99"
-              />
-              <div
-                className="MuiExpansionPanelActions-root-104"
+              </p>
+            </div>
+            <hr
+              className="MuiDivider-root-101"
+            />
+            <div
+              className="MuiExpansionPanelActions-root-106"
+            >
+              <button
+                className="MuiButtonBase-root-42 MuiButton-root-108 MuiButton-text-110 MuiButton-textPrimary-111 MuiButton-flat-113 MuiButton-flatPrimary-114 MuiButton-sizeSmall-131 MuiExpansionPanelActions-action-107"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                <button
-                  className="MuiButtonBase-root-41 MuiButton-root-106 MuiButton-text-108 MuiButton-textPrimary-109 MuiButton-flat-111 MuiButton-flatPrimary-112 MuiButton-sizeSmall-129 MuiExpansionPanelActions-action-105"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
+                <span
+                  className="MuiButton-label-109"
                 >
-                  <span
-                    className="MuiButton-label-107"
-                  >
-                    Save
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root-132"
-                  />
-                </button>
-                <button
-                  className="MuiButtonBase-root-41 MuiButton-root-106 MuiButton-text-108 MuiButton-textPrimary-109 MuiButton-flat-111 MuiButton-flatPrimary-112 MuiButton-sizeSmall-129 MuiExpansionPanelActions-action-105"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
+                  Save
+                </span>
+                <span
+                  className="MuiTouchRipple-root-134"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root-42 MuiButton-root-108 MuiButton-text-110 MuiButton-textPrimary-111 MuiButton-flat-113 MuiButton-flatPrimary-114 MuiButton-sizeSmall-131 MuiExpansionPanelActions-action-107"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-109"
                 >
-                  <span
-                    className="MuiButton-label-107"
+                  Delete
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-87 MuiSvgIcon-fontSizeSmall-94"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
                   >
-                    Delete
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root-85 MuiSvgIcon-fontSizeSmall-92"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root-132"
-                  />
-                </button>
-              </div>
+                    <path
+                      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-134"
+                />
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="PostList-root-1"
+  >
     <div
-      className="PostList-root-1"
+      className="MuiPaper-root-9 MuiPaper-elevation1-12 MuiPaper-rounded-10 MuiExpansionPanel-root-5 MuiExpansionPanel-rounded-6 PostList-accordionSpace-3 PostList-expanded-2"
     >
       <div
-        className="MuiPaper-root-8 MuiPaper-elevation1-11 MuiExpansionPanel-root-5 PostList-accordionSpace-3 PostList-expanded-2"
+        aria-expanded={false}
+        className="MuiButtonBase-root-42 MuiExpansionPanelSummary-root-36"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
       >
         <div
-          aria-expanded={false}
-          className="MuiButtonBase-root-41 MuiExpansionPanelSummary-root-35"
+          className="MuiExpansionPanelSummary-content-40"
+        >
+          <p
+            className="MuiTypography-root-45 MuiTypography-body1-54 PostList-heading-4"
+          >
+            qui est esse
+          </p>
+        </div>
+        <div
+          aria-hidden="true"
+          className="MuiButtonBase-root-42 MuiIconButton-root-81 MuiExpansionPanelSummary-expandIcon-41"
           onBlur={[Function]}
-          onClick={[Function]}
           onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -208,176 +233,176 @@ nostrum rerum est autem sunt rem eveniet architecto
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           role="button"
-          tabIndex="0"
+          tabIndex={-1}
         >
-          <div
-            className="MuiExpansionPanelSummary-content-39"
+          <span
+            className="MuiIconButton-label-86"
           >
-            <p
-              className="MuiTypography-root-44 MuiTypography-body1-53 PostList-heading-4"
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-87"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              qui est esse
-            </p>
-          </div>
-          <div
-            aria-hidden="true"
-            className="MuiButtonBase-root-41 MuiIconButton-root-79 MuiExpansionPanelSummary-expandIcon-40"
-            onBlur={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={-1}
-          >
-            <span
-              className="MuiIconButton-label-84"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-85"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-            <span
-              className="MuiTouchRipple-root-132"
-            />
-          </div>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-134"
+          />
         </div>
-        <div
-          aria-hidden="true"
-          className="MuiCollapse-container-94"
-          style={
-            Object {
-              "minHeight": "0px",
-            }
+      </div>
+      <div
+        aria-hidden="true"
+        className="MuiCollapse-container-96"
+        style={
+          Object {
+            "minHeight": "0px",
           }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper-98"
         >
           <div
-            className="MuiCollapse-wrapper-96"
+            className="MuiCollapse-wrapperInner-99"
           >
             <div
-              className="MuiCollapse-wrapperInner-97"
+              className="MuiExpansionPanelDetails-root-100"
             >
-              <div
-                className="MuiExpansionPanelDetails-root-98"
+              <p
+                className="MuiTypography-root-45 MuiTypography-body1-54"
               >
-                <p
-                  className="MuiTypography-root-44 MuiTypography-body1-53"
-                >
-                  est rerum tempore vitae
+                est rerum tempore vitae
 sequi sint nihil reprehenderit dolor beatae ea dolores neque
 fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis
 qui aperiam non debitis possimus qui neque nisi nulla
-                </p>
-              </div>
-              <hr
-                className="MuiDivider-root-99"
-              />
-              <div
-                className="MuiExpansionPanelActions-root-104"
+              </p>
+            </div>
+            <hr
+              className="MuiDivider-root-101"
+            />
+            <div
+              className="MuiExpansionPanelActions-root-106"
+            >
+              <button
+                className="MuiButtonBase-root-42 MuiButton-root-108 MuiButton-text-110 MuiButton-textPrimary-111 MuiButton-flat-113 MuiButton-flatPrimary-114 MuiButton-sizeSmall-131 MuiExpansionPanelActions-action-107"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                <button
-                  className="MuiButtonBase-root-41 MuiButton-root-106 MuiButton-text-108 MuiButton-textPrimary-109 MuiButton-flat-111 MuiButton-flatPrimary-112 MuiButton-sizeSmall-129 MuiExpansionPanelActions-action-105"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
+                <span
+                  className="MuiButton-label-109"
                 >
-                  <span
-                    className="MuiButton-label-107"
-                  >
-                    Save
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root-132"
-                  />
-                </button>
-                <button
-                  className="MuiButtonBase-root-41 MuiButton-root-106 MuiButton-text-108 MuiButton-textPrimary-109 MuiButton-flat-111 MuiButton-flatPrimary-112 MuiButton-sizeSmall-129 MuiExpansionPanelActions-action-105"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
+                  Save
+                </span>
+                <span
+                  className="MuiTouchRipple-root-134"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root-42 MuiButton-root-108 MuiButton-text-110 MuiButton-textPrimary-111 MuiButton-flat-113 MuiButton-flatPrimary-114 MuiButton-sizeSmall-131 MuiExpansionPanelActions-action-107"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-109"
                 >
-                  <span
-                    className="MuiButton-label-107"
+                  Delete
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-87 MuiSvgIcon-fontSizeSmall-94"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
                   >
-                    Delete
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root-85 MuiSvgIcon-fontSizeSmall-92"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root-132"
-                  />
-                </button>
-              </div>
+                    <path
+                      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-134"
+                />
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div
+    className="PostList-root-1"
+  >
     <div
-      className="PostList-root-1"
+      className="MuiPaper-root-9 MuiPaper-elevation1-12 MuiPaper-rounded-10 MuiExpansionPanel-root-5 MuiExpansionPanel-rounded-6 PostList-accordionSpace-3 PostList-expanded-2"
     >
       <div
-        className="MuiPaper-root-8 MuiPaper-elevation1-11 MuiExpansionPanel-root-5 PostList-accordionSpace-3 PostList-expanded-2"
+        aria-expanded={false}
+        className="MuiButtonBase-root-42 MuiExpansionPanelSummary-root-36"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
       >
         <div
-          aria-expanded={false}
-          className="MuiButtonBase-root-41 MuiExpansionPanelSummary-root-35"
+          className="MuiExpansionPanelSummary-content-40"
+        >
+          <p
+            className="MuiTypography-root-45 MuiTypography-body1-54 PostList-heading-4"
+          >
+            ea molestias quasi exercitationem repellat qui ipsa sit aut
+          </p>
+        </div>
+        <div
+          aria-hidden="true"
+          className="MuiButtonBase-root-42 MuiIconButton-root-81 MuiExpansionPanelSummary-expandIcon-41"
           onBlur={[Function]}
-          onClick={[Function]}
           onContextMenu={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -389,160 +414,133 @@ qui aperiam non debitis possimus qui neque nisi nulla
           onTouchMove={[Function]}
           onTouchStart={[Function]}
           role="button"
-          tabIndex="0"
+          tabIndex={-1}
         >
-          <div
-            className="MuiExpansionPanelSummary-content-39"
+          <span
+            className="MuiIconButton-label-86"
           >
-            <p
-              className="MuiTypography-root-44 MuiTypography-body1-53 PostList-heading-4"
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-87"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
             >
-              ea molestias quasi exercitationem repellat qui ipsa sit aut
-            </p>
-          </div>
-          <div
-            aria-hidden="true"
-            className="MuiButtonBase-root-41 MuiIconButton-root-79 MuiExpansionPanelSummary-expandIcon-40"
-            onBlur={[Function]}
-            onContextMenu={[Function]}
-            onFocus={[Function]}
-            onKeyDown={[Function]}
-            onKeyUp={[Function]}
-            onMouseDown={[Function]}
-            onMouseLeave={[Function]}
-            onMouseUp={[Function]}
-            onTouchEnd={[Function]}
-            onTouchMove={[Function]}
-            onTouchStart={[Function]}
-            role="button"
-            tabIndex={-1}
-          >
-            <span
-              className="MuiIconButton-label-84"
-            >
-              <svg
-                aria-hidden="true"
-                className="MuiSvgIcon-root-85"
-                focusable="false"
-                role="presentation"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-            <span
-              className="MuiTouchRipple-root-132"
-            />
-          </div>
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+            </svg>
+          </span>
+          <span
+            className="MuiTouchRipple-root-134"
+          />
         </div>
-        <div
-          aria-hidden="true"
-          className="MuiCollapse-container-94"
-          style={
-            Object {
-              "minHeight": "0px",
-            }
+      </div>
+      <div
+        aria-hidden="true"
+        className="MuiCollapse-container-96"
+        style={
+          Object {
+            "minHeight": "0px",
           }
+        }
+      >
+        <div
+          className="MuiCollapse-wrapper-98"
         >
           <div
-            className="MuiCollapse-wrapper-96"
+            className="MuiCollapse-wrapperInner-99"
           >
             <div
-              className="MuiCollapse-wrapperInner-97"
+              className="MuiExpansionPanelDetails-root-100"
             >
-              <div
-                className="MuiExpansionPanelDetails-root-98"
+              <p
+                className="MuiTypography-root-45 MuiTypography-body1-54"
               >
-                <p
-                  className="MuiTypography-root-44 MuiTypography-body1-53"
-                >
-                  et iusto sed quo iure
+                et iusto sed quo iure
 voluptatem occaecati omnis eligendi aut ad
 voluptatem doloribus vel accusantium quis pariatur
 molestiae porro eius odio et labore et velit aut
-                </p>
-              </div>
-              <hr
-                className="MuiDivider-root-99"
-              />
-              <div
-                className="MuiExpansionPanelActions-root-104"
+              </p>
+            </div>
+            <hr
+              className="MuiDivider-root-101"
+            />
+            <div
+              className="MuiExpansionPanelActions-root-106"
+            >
+              <button
+                className="MuiButtonBase-root-42 MuiButton-root-108 MuiButton-text-110 MuiButton-textPrimary-111 MuiButton-flat-113 MuiButton-flatPrimary-114 MuiButton-sizeSmall-131 MuiExpansionPanelActions-action-107"
+                disabled={false}
+                onBlur={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
               >
-                <button
-                  className="MuiButtonBase-root-41 MuiButton-root-106 MuiButton-text-108 MuiButton-textPrimary-109 MuiButton-flat-111 MuiButton-flatPrimary-112 MuiButton-sizeSmall-129 MuiExpansionPanelActions-action-105"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
+                <span
+                  className="MuiButton-label-109"
                 >
-                  <span
-                    className="MuiButton-label-107"
-                  >
-                    Save
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root-132"
-                  />
-                </button>
-                <button
-                  className="MuiButtonBase-root-41 MuiButton-root-106 MuiButton-text-108 MuiButton-textPrimary-109 MuiButton-flat-111 MuiButton-flatPrimary-112 MuiButton-sizeSmall-129 MuiExpansionPanelActions-action-105"
-                  disabled={false}
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onContextMenu={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchMove={[Function]}
-                  onTouchStart={[Function]}
-                  tabIndex="0"
-                  type="button"
+                  Save
+                </span>
+                <span
+                  className="MuiTouchRipple-root-134"
+                />
+              </button>
+              <button
+                className="MuiButtonBase-root-42 MuiButton-root-108 MuiButton-text-110 MuiButton-textPrimary-111 MuiButton-flat-113 MuiButton-flatPrimary-114 MuiButton-sizeSmall-131 MuiExpansionPanelActions-action-107"
+                disabled={false}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onContextMenu={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex="0"
+                type="button"
+              >
+                <span
+                  className="MuiButton-label-109"
                 >
-                  <span
-                    className="MuiButton-label-107"
+                  Delete
+                  <svg
+                    aria-hidden="true"
+                    className="MuiSvgIcon-root-87 MuiSvgIcon-fontSizeSmall-94"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
                   >
-                    Delete
-                    <svg
-                      aria-hidden="true"
-                      className="MuiSvgIcon-root-85 MuiSvgIcon-fontSizeSmall-92"
-                      focusable="false"
-                      role="presentation"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
-                      />
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    className="MuiTouchRipple-root-132"
-                  />
-                </button>
-              </div>
+                    <path
+                      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+                <span
+                  className="MuiTouchRipple-root-134"
+                />
+              </button>
             </div>
           </div>
         </div>

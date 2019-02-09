@@ -15,7 +15,7 @@ exports[`Navigation Thunk should create an action to toggle drawer 1`] = `
   ],
   "results": Array [
     Object {
-      "isThrow": false,
+      "type": "return",
       "value": undefined,
     },
   ],
