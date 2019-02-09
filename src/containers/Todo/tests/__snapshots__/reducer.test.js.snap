@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todoReducer returns the correct state 1`] = `
+Object {
+  "error": Object {
+    "errorMessage": "",
+    "isError": false,
+  },
+  "isFetching": false,
+  "todos": Array [],
+}
+`;

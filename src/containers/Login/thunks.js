@@ -1,19 +1,14 @@
 /*
- * 
+ *
  * Login
- * 
+ *
  */
 
-
 // Do this in every file where you use `fetch`
-import fetch from 'cross-fetch'
-import validator from "validator";
-import { toastr } from 'react-redux-toastr';
-import { push, goBack } from 'connected-react-router';
-
+import fetch from 'cross-fetch';
+import validator from 'validator';
 
 import {} from './actions';
-
 
 /*
 export function fetch() {

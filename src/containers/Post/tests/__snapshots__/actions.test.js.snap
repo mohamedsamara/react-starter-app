@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post Actions has a type of DELETE_POST_SUCCESS 1`] = `
+Object {
+  "index": 1,
+  "type": "src/Post/DELETE_POST_SUCCESS",
+}
+`;

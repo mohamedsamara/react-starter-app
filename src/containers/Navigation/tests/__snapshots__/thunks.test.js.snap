@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation Thunk should create an action to toggle drawer 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "isDrawerOpen": Object {
+          "open": true,
+          "side": "right",
+        },
+        "type": "src/Navigation/TOGGLE_DRAWER",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "isThrow": false,
+      "value": undefined,
+    },
+  ],
+}
+`;

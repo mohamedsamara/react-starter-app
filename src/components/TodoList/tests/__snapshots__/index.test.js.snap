@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodoList /> should <TodoList> render correctly 1`] = `
+<div
+  className="todoList"
+>
+  <div
+    className="MuiPaper-root-3 MuiPaper-elevation1-6 MuiPaper-rounded-4 MuiCard-root-2 TodoList-card-1"
+  >
+    <button
+      className="MuiButtonBase-root-33 MuiCardActionArea-root-30"
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <div
+        className="MuiCardContent-root-36"
+      >
+        <h2
+          className="MuiTypography-root-37 MuiTypography-h5-53 MuiTypography-gutterBottom-64"
+        >
+          delectus aut autem
+        </h2>
+        <p
+          className="MuiTypography-root-37 MuiTypography-body1-46"
+        >
+          Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+        </p>
+      </div>
+      <span
+        className="MuiCardActionArea-focusHighlight-32"
+      />
+      <span
+        className="MuiTouchRipple-root-100"
+      />
+    </button>
+    <div
+      className="MuiCardActions-root-72"
+    >
+      <button
+        className="MuiButtonBase-root-33 MuiButton-root-74 MuiButton-text-76 MuiButton-textPrimary-77 MuiButton-flat-79 MuiButton-flatPrimary-80 MuiButton-sizeSmall-97 MuiCardActions-action-73"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-75"
+        >
+          Not completed
+        </span>
+        <span
+          className="MuiTouchRipple-root-100"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiPaper-root-3 MuiPaper-elevation1-6 MuiPaper-rounded-4 MuiCard-root-2 TodoList-card-1"
+  >
+    <button
+      className="MuiButtonBase-root-33 MuiCardActionArea-root-30"
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <div
+        className="MuiCardContent-root-36"
+      >
+        <h2
+          className="MuiTypography-root-37 MuiTypography-h5-53 MuiTypography-gutterBottom-64"
+        >
+          quis ut nam facilis et officia qui
+        </h2>
+        <p
+          className="MuiTypography-root-37 MuiTypography-body1-46"
+        >
+          Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica
+        </p>
+      </div>
+      <span
+        className="MuiCardActionArea-focusHighlight-32"
+      />
+      <span
+        className="MuiTouchRipple-root-100"
+      />
+    </button>
+    <div
+      className="MuiCardActions-root-72"
+    >
+      <button
+        className="MuiButtonBase-root-33 MuiButton-root-74 MuiButton-text-76 MuiButton-textPrimary-77 MuiButton-flat-79 MuiButton-flatPrimary-80 MuiButton-sizeSmall-97 MuiCardActions-action-73"
+        disabled={false}
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex="0"
+        type="button"
+      >
+        <span
+          className="MuiButton-label-75"
+        >
+          Not completed
+        </span>
+        <span
+          className="MuiTouchRipple-root-100"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

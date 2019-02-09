@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`postReducer should handle the delete post action correctly 1`] = `
+Object {
+  "posts": Array [],
+}
+`;

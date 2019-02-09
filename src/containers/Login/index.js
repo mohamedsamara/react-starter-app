@@ -11,13 +11,14 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
+
 import actions from '../../actions.js';
 import messages from './messages';
 import styles from './styles.css';
 
 export class Login extends React.Component {
 
-  componentDidMount() {
+  componentWillMount() {
   }
 
   render() {

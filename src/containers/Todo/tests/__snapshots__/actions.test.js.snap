@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos Actions has a type of FETCH_TODOS_REQUEST 1`] = `
+Object {
+  "isFetching": false,
+  "type": "src/Dashboard/FETCH_TODOS_REQUEST",
+}
+`;

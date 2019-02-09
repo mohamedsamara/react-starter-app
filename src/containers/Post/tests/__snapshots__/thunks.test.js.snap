@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Posts Thunk should dispatch correct actions when deleting post 1`] = `
+Array [
+  Array [
+    Object {
+      "index": undefined,
+      "type": "src/Post/DELETE_POST_SUCCESS",
+    },
+  ],
+]
+`;

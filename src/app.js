@@ -5,12 +5,14 @@
  */
 
 import React from 'react';
+import { hot } from 'react-hot-loader';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
-import { hot } from 'react-hot-loader';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 
 import store, { history } from './store';
 import Routes from './routes/routes';
+import theme from './theme';
 
 // Import application sass styles
 import './styles/sass/style.scss';
@@ -34,11 +36,13 @@ import 'sanitize.css/sanitize.css';
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
 
 const app = () => (
-  <Provider store={store}>
-    <ConnectedRouter history={history}>
-      <Routes />
-    </ConnectedRouter>
-  </Provider>
+  <MuiThemeProvider theme={theme}>
+    <Provider store={store}>
+      <ConnectedRouter history={history}>
+        <Routes />
+      </ConnectedRouter>
+    </Provider>
+  </MuiThemeProvider>
 );
 
 export default hot(module)(app);
