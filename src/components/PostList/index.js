@@ -24,20 +24,20 @@ import styles from './styles.css';
 
 const muiStyles = theme => ({
   root: {
-    width: '100%'
+    width: '100%',
   },
   expanded: {
     '&:last-child': {
-      marginBottom: 20
-    }
+      marginBottom: 20,
+    },
   },
   accordionSpace: {
-    marginBottom: 20
+    marginBottom: 20,
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular
-  }
+    fontWeight: theme.typography.fontWeightRegular,
+  },
 });
 
 const PostList = props => {
@@ -46,7 +46,7 @@ const PostList = props => {
   const postNodes = posts.map((post, index) => (
     <div key={post.id} className={classes.root} key={post.id}>
       <ExpansionPanel
-        className={classes.accordionSpace + ' ' + classes.expanded}
+        className={`${classes.accordionSpace} ${classes.expanded}`}
       >
         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
           <Typography className={classes.heading}>{post.title}</Typography>
@@ -57,18 +57,18 @@ const PostList = props => {
 
         <Divider />
         <ExpansionPanelActions>
-          <Button size='small' color='primary'>
+          <Button size="small" color="primary">
             Save
           </Button>
           <Button
-            color='primary'
-            size='small'
+            color="primary"
+            size="small"
             onClick={() => {
               deletePost(post.id, index);
             }}
           >
             Delete
-            <DeleteIcon fontSize='small' />
+            <DeleteIcon fontSize="small" />
           </Button>
         </ExpansionPanelActions>
       </ExpansionPanel>
@@ -80,7 +80,7 @@ const PostList = props => {
 
 const { bool, object } = PropTypes;
 PostList.propTypes = {
-  classes: object.isRequired
+  classes: object.isRequired,
 };
 
 export default withStyles(muiStyles)(PostList);

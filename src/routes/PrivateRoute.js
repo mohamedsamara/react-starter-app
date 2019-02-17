@@ -20,17 +20,17 @@ import Footer from '../components/Footer';
 import Notifications from '../components/Notification';
 
 const PrivateRoute = () => (
-  <div className='application'>
+  <div className="application">
     <Navigation />
     <Notifications />
     <Header />
-    <main className='main'>
-      <div className='wrapper'>
+    <main className="main">
+      <div className="wrapper">
         <Switch>
-          <Route exact path='/' component={Dashboard} />
-          <Route path='/todo' component={Todo} />
-          <Route path='/post' component={Post} />
-          <Route path='**' component={NotFoundPage} />
+          <Route exact path="/" component={Dashboard} />
+          <Route path="/todo" component={Todo} />
+          <Route path="/post" component={Post} />
+          <Route path="**" component={NotFoundPage} />
         </Switch>
       </div>
     </main>

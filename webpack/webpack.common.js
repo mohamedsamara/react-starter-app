@@ -12,17 +12,26 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: 'pre',
+        test: /\.(js|jsx)$/,
+        loader: 'eslint-loader',
+        exclude: /(node_modules)/,
+        options: {
+          emitWarning: process.env.NODE_ENV !== 'production',
+        },
+      },
+      {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules)/
+        exclude: /(node_modules)/,
       },
       {
         test: /\.(html)$/,
         exclude: /node_modules/,
         use: {
           loader: 'html-loader',
-          options: { minimize: true }
-        }
+          options: { minimize: true },
+        },
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|ico)$/,
@@ -31,10 +40,10 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: commonPaths.imagesFolder,
-              name: '[name].[hash].[ext]'
-            }
-          }
-        ]
+              name: '[name].[hash].[ext]',
+            },
+          },
+        ],
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -43,20 +52,20 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: commonPaths.fontsFolder,
-              name: '[name].[hash].[ext]'
-            }
-          }
-        ]
-      }
-    ]
+              name: '[name].[hash].[ext]',
+            },
+          },
+        ],
+      },
+    ],
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['*', '.js', '.jsx'],
   },
   plugins: [
     new webpack.ProgressPlugin(),
     new CopyWebpackPlugin([{ from: 'src/images', to: 'images' }], {
-      copyUnmodified: true
-    })
-  ]
+      copyUnmodified: true,
+    }),
+  ],
 };

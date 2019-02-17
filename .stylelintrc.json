@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-recommended",
+    "stylelint-config-prettier"
+  ],
+  "plugins": ["stylelint-prettier", "stylelint-scss"],
+  "rules": {
+    "prettier/prettier": true,
+    "number-leading-zero": null,
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "font-family-no-missing-generic-family-keyword": null,
+    "comment-empty-line-before": [
+      "always",
+      {
+        "ignore": ["stylelint-commands", "after-comment"]
+      }
+    ],
+    "no-descending-specificity": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+      }
+    ],
+    "unit-whitelist": ["px", "em", "deg", "rem", "%", "s"]
+  }
+}

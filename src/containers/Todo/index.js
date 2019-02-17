@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
-import actions from '../../actions.js';
+import actions from '../../actions';
 import messages from './messages';
 import styles from './styles.css';
 import TodoList from '../../components/TodoList';
@@ -26,12 +26,12 @@ export class Todo extends React.Component {
     const { todos, isFetching, error } = this.props;
 
     return (
-      <div className='todo'>
+      <div className="todo">
         <Helmet
-          title='Todo'
+          title="Todo"
           meta={[{ name: 'description', content: 'Description of Todo' }]}
         />
-        {isFetching && <LoadingIndicator message={'Loading Todos'} />}
+        {isFetching && <LoadingIndicator message="Loading Todos" />}
         {error.isError ? <Message error={error} /> : <TodoList todos={todos} />}
       </div>
     );
@@ -44,11 +44,11 @@ const mapStateToProps = state => {
   return {
     todos: state.todo.todos,
     error: state.todo.error,
-    isFetching: state.todo.isFetching
+    isFetching: state.todo.isFetching,
   };
 };
 
 export default connect(
   mapStateToProps,
-  actions
+  actions,
 )(Todo);

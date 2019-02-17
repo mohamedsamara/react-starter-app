@@ -14,8 +14,8 @@ import styles from './styles.css';
 
 const muStyles = theme => ({
   progress: {
-    margin: theme.spacing.unit * 2
-  }
+    margin: theme.spacing.unit * 2,
+  },
 });
 
 const LoadingIndicator = props => {
@@ -33,7 +33,7 @@ const { object, string } = PropTypes;
 
 LoadingIndicator.propTypes = {
   classes: object.isRequired,
-  message: string.isRequired
+  message: string.isRequired,
 };
 
 export default withStyles(muStyles)(LoadingIndicator);

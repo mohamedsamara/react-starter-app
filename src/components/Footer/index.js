@@ -14,25 +14,25 @@ import messages from './messages';
 import styles from './styles.css';
 
 const Footer = props => {
-  let infoLinks = [
-    { name: 'Contact Us', to: 'contact-us' },
-    { name: 'Returns', to: 'return' },
-    { name: 'Shipping', to: 'shipping' }
+  const infoLinks = [
+    { id: 0, name: 'Contact Us', to: 'contact-us' },
+    { id: 1, name: 'Returns', to: 'return' },
+    { id: 2, name: 'Shipping', to: 'shipping' },
   ];
 
   const footerBusinessLinks = (
-    <ul className='support-links'>
-      <li className='footer-link'>
-        <Link to={'/signup'}>Signup</Link>
+    <ul className="support-links">
+      <li className="footer-link">
+        <Link to="/signup">Signup</Link>
       </li>
-      <li className='footer-link'>
-        <Link to={'/login'}>Login</Link>
+      <li className="footer-link">
+        <Link to="/login">Login</Link>
       </li>
     </ul>
   );
 
-  const footerLinks = infoLinks.map((item, index) => (
-    <li key={index} className='footer-link'>
+  const footerLinks = infoLinks.map(item => (
+    <li key={item.id} className="footer-link">
       <Link to={`/${item.to}`}>{item.name}</Link>
     </li>
   ));
@@ -40,56 +40,56 @@ const Footer = props => {
   const { isPrivate } = props;
 
   return (
-    <footer className='footer'>
+    <footer className="footer">
       <Container>
         {isPrivate ? (
-          <div className='contact-us-block'>Connect With Us !</div>
+          <div className="contact-us-block">Connect With Us !</div>
         ) : (
-          <div className='footer-content'>
-            <div className='footer-block'>
-              <div className='block-title'>
+          <div className="footer-content">
+            <div className="footer-block">
+              <div className="block-title">
                 <h2>Customer Service</h2>
               </div>
-              <div className='block-content'>
+              <div className="block-content">
                 <ul>{footerLinks}</ul>
               </div>
             </div>
-            <div className='footer-block'>
-              <div className='block-title'>
+            <div className="footer-block">
+              <div className="block-title">
                 <h2>Links</h2>
               </div>
-              <div className='block-content'>
+              <div className="block-content">
                 <ul>{footerLinks}</ul>
               </div>
             </div>
-            <div className='footer-block'>
-              <div className='block-title'>
+            <div className="footer-block">
+              <div className="block-title">
                 <h2>Newsletter</h2>
               </div>
-              <div className='block-content'>{footerBusinessLinks}</div>
+              <div className="block-content">{footerBusinessLinks}</div>
             </div>
           </div>
         )}
 
-        <div className='footer-copyright'>
+        <div className="footer-copyright">
           <span>© {new Date().getFullYear()} boilerplate</span>
         </div>
-        <ul className='footer-social-item'>
+        <ul className="footer-social-item">
           <li>
-            <span className='facebook-icon' />
-            <a href='/facebook.com/' rel='noreferrer' target='_blank' />
+            <span className="facebook-icon" />
+            <a href="/facebook.com/" rel="noreferrer" target="_blank" />
           </li>
           <li>
-            <span className='instagram-icon' />
-            <a href='/instagram.com/' rel='noreferrer' target='_blank' />
+            <span className="instagram-icon" />
+            <a href="/instagram.com/" rel="noreferrer" target="_blank" />
           </li>
           <li>
-            <span className='pinterest-icon' />
-            <a href='/pinterest.com/' rel='noreferrer' target='_blank' />
+            <span className="pinterest-icon" />
+            <a href="/pinterest.com/" rel="noreferrer" target="_blank" />
           </li>
           <li>
-            <span className='twitter-icon' />
-            <a href='/twitter.com/' rel='noreferrer' target='_blank' />
+            <span className="twitter-icon" />
+            <a href="/twitter.com/" rel="noreferrer" target="_blank" />
           </li>
         </ul>
       </Container>
@@ -99,7 +99,7 @@ const Footer = props => {
 
 const { bool } = PropTypes;
 Footer.propTypes = {
-  isPrivate: bool
+  isPrivate: bool,
 };
 
 export default Footer;

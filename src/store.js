@@ -14,7 +14,7 @@ import createReducer from './reducers';
 
 export const history = createHistory({
   basename: '/',
-  hashType: 'noslash'
+  hashType: 'noslash',
 });
 
 const middlewares = [logger, thunk, routerMiddleware(history)];
@@ -29,6 +29,11 @@ const composeEnhancers =
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
     : compose;
 
+const store = createStore(
+  createReducer(history),
+  composeEnhancers(...enhancers),
+);
+
 if (module.hot) {
   // Enable Webpack hot module replacement for reducers
   module.hot.accept('./reducers', () => {
@@ -36,10 +41,5 @@ if (module.hot) {
     store.replaceReducer(nextRootReducer(history));
   });
 }
-
-const store = createStore(
-  createReducer(history),
-  composeEnhancers(...enhancers)
-);
 
 export default store;

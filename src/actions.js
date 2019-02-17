@@ -15,8 +15,8 @@ export default function mapDispatchToProps(dispatch) {
     {
       ...navigation,
       ...todo,
-      ...post
+      ...post,
     },
-    dispatch
+    dispatch,
   );
 }

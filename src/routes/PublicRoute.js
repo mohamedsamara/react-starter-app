@@ -18,15 +18,15 @@ import Footer from '../components/Footer';
 import Notifications from '../components/Notification';
 
 const PublicRoute = () => (
-  <div className='application'>
+  <div className="application">
     <Notifications />
     <Header />
-    <main className='main'>
-      <div className='wrapper'>
+    <main className="main">
+      <div className="wrapper">
         <Switch>
-          <Route exact path='/login' component={LoginPage} />
-          <Route path='/signup' component={SignupPage} />
-          <Route path='**' component={NotFoundPage} />
+          <Route exact path="/login" component={LoginPage} />
+          <Route path="/signup" component={SignupPage} />
+          <Route path="**" component={NotFoundPage} />
         </Switch>
       </div>
     </main>

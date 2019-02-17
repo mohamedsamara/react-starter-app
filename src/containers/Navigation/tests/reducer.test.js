@@ -7,8 +7,8 @@ describe('navigationReducer', () => {
         top: false,
         left: false,
         bottom: false,
-        right: false
-      }
+        right: false,
+      },
     });
   });
 });

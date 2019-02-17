@@ -12,7 +12,7 @@ import { handleToggleDrawer } from './actions';
 
 // Toggle Drawer
 export function toggleDrawer(side, open) {
-  let isDrawerOpen = {};
+  const isDrawerOpen = {};
   isDrawerOpen.side = side;
   isDrawerOpen.open = open;
 

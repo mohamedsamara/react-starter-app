@@ -5,7 +5,7 @@ describe('postReducer', () => {
   let initialState;
   beforeEach(() => {
     initialState = {
-      posts: []
+      posts: [],
     };
   });
 

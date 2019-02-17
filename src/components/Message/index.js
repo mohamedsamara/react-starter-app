@@ -25,8 +25,8 @@ const { shape, string, bool } = PropTypes;
 Message.propTypes = {
   error: shape({
     errorMessage: string,
-    isError: bool
-  })
+    isError: bool,
+  }),
 };
 
 export default Message;

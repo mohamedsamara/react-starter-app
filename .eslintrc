@@ -1,0 +1,75 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "prettier",
+    "jest-enzyme",
+    "prettier/react",
+    "plugin:prettier/recommended",
+    "plugin:jest/recommended",
+    "plugin:import/recommended"
+  ],
+  "plugins": ["react", "prettier", "jsx-a11y", "import", "babel"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "quotes": ["warn", "single"],
+    "linebreak-style": "off",
+    "arrow-parens": "off",
+    "object-curly-newline": "off",
+    "no-mixed-operators": "off",
+    "arrow-body-style": "off",
+    "function-paren-newline": "off",
+    "no-plusplus": "off",
+    "space-before-function-paren": 0,
+    "max-len": 0,
+    "no-console": 0,
+    "no-alert": "error",
+    "no-param-reassign": "off",
+    "radix": "off",
+    "no-underscore-dangle": "off",
+    "react/require-default-props": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
+    "react/jsx-no-duplicate-props": "off",
+    "react/prefer-stateless-function": "off",
+    "react/destructuring-assignment": 0,
+    "react/no-access-state-in-setstate": 0,
+    "no-useless-constructor": "off",
+    "no-unused-vars": "off",
+    "react/no-find-dom-node": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "no-shadow": "off",
+    "func-names": "off",
+    "react/no-did-mount-set-state": "off",
+    "react/no-unused-prop-types": "off",
+    "react/forbid-prop-types": "off",
+    "react/prop-types": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      { "components": ["Link"], "specialLink": ["to"] }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "controlComponents": ["Input"]
+      }
+    ],
+    "jsx-a11y/label-has-for": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+    "prettier/prettier": ["error"]
+  }
+}

@@ -15,8 +15,8 @@ import PrivateRoute from './PrivateRoute';
 
 const Routes = ({ authenticated = true }) => (
   <Route
-    path='/'
-    render={() => (authenticated == true ? <PrivateRoute /> : <PublicRoute />)}
+    path="/"
+    render={() => (authenticated === true ? <PrivateRoute /> : <PublicRoute />)}
   />
 );
 
@@ -24,5 +24,5 @@ const mapStateToProps = state => ({});
 
 export default connect(
   mapStateToProps,
-  actions
+  actions,
 )(Routes);

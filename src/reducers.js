@@ -19,7 +19,7 @@ const createReducer = history =>
     toastr: toastrReducer,
     navigation: navigationReducer,
     todo: todoReducer,
-    post: postReducer
+    post: postReducer,
   });
 
 export default createReducer;

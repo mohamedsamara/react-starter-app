@@ -13,15 +13,24 @@ import { push, goBack } from 'connected-react-router';
 import {
   fetchTodosRequest,
   fetchTodosSuccess,
-  fetchTodosFailure
+  fetchTodosFailure,
 } from './actions';
+
+// Check Todos
+export function checkTodos() {
+  return function(dispatch, getState) {
+    if (getState().todo.todos.length === 0) {
+      dispatch(fetchTodosRequest(true));
+    }
+  };
+}
 
 export function fetchTodos() {
   return function(dispatch, getState) {
     dispatch(checkTodos());
 
     return fetch('https://jsonplaceholder.typicode.com/todos', {
-      method: 'GET'
+      method: 'GET',
     })
       .then(response => {
         if (!response.ok) {
@@ -31,27 +40,18 @@ export function fetchTodos() {
         return response.json();
       })
       .then(data => {
-        toastr.success('Success', `Todos Fetched Successfully`);
+        toastr.success('Success', 'Todos Fetched Successfully');
         dispatch(fetchTodosSuccess(data));
         dispatch(fetchTodosRequest(false));
       })
       .catch(error => {
-        let errorData = {};
+        const errorData = {};
         errorData.isError = true;
         errorData.errorMessage = 'Failed to fetch Todos';
 
-        toastr.error('Error', `Error Fetching Todos`);
+        toastr.error('Error', 'Error Fetching Todos');
 
         dispatch(fetchTodosFailure(errorData));
       });
-  };
-}
-
-// Check Todos
-export function checkTodos() {
-  return function(dispatch, getState) {
-    if (getState().todo.todos.length == 0) {
-      dispatch(fetchTodosRequest(true));
-    }
   };
 }

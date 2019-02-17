@@ -1,8 +1,7 @@
- import React from 'react';
- import { shallow } from 'enzyme';
+import React from 'react';
+import { shallow } from 'enzyme';
 
- import Post from '../index';
-
+import Post from '../index';
 
 describe('<Post />', () => {
   it('should render an <Post> tag', () => {
@@ -11,4 +10,3 @@ describe('<Post />', () => {
     expect(wrapper.exists()).toBe(true);
   });
 });
-

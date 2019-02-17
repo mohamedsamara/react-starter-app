@@ -13,8 +13,8 @@ const initialState = {
     top: false,
     left: false,
     bottom: false,
-    right: false
-  }
+    right: false,
+  },
 };
 
 const navigationReducer = (state = initialState, action) => {
@@ -24,9 +24,9 @@ const navigationReducer = (state = initialState, action) => {
       newState = update(state, {
         isDrawerOpen: {
           [action.isDrawerOpen.side]: {
-            $set: action.isDrawerOpen.open
-          }
-        }
+            $set: action.isDrawerOpen.open,
+          },
+        },
       });
       return newState;
     default:

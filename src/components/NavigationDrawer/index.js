@@ -24,11 +24,11 @@ import styles from './styles.css';
 
 const muiStyles = {
   list: {
-    width: 250
+    width: 250,
   },
   fullList: {
-    width: 'auto'
-  }
+    width: 'auto',
+  },
 };
 
 const NavigationDrawer = props => {
@@ -87,7 +87,7 @@ const NavigationDrawer = props => {
   );
 
   return (
-    <div className='navigationDrawer'>
+    <div className="navigationDrawer">
       <Button onClick={() => toggleDrawer('left', true)}>Open Left</Button>
       <Button onClick={() => toggleDrawer('right', true)}>Open Right</Button>
       <Button onClick={() => toggleDrawer('top', true)}>Open Top</Button>
@@ -98,7 +98,7 @@ const NavigationDrawer = props => {
       >
         <div
           tabIndex={0}
-          role='button'
+          role="button"
           onClick={() => toggleDrawer('left', false)}
           onKeyDown={() => toggleDrawer('left', false)}
         >
@@ -106,13 +106,13 @@ const NavigationDrawer = props => {
         </div>
       </Drawer>
       <Drawer
-        anchor='top'
+        anchor="top"
         open={isDrawerOpen.top}
         onClose={() => toggleDrawer('top', false)}
       >
         <div
           tabIndex={0}
-          role='button'
+          role="button"
           onClick={() => toggleDrawer('top', false)}
           onKeyDown={() => toggleDrawer('top', false)}
         >
@@ -120,13 +120,13 @@ const NavigationDrawer = props => {
         </div>
       </Drawer>
       <Drawer
-        anchor='bottom'
+        anchor="bottom"
         open={isDrawerOpen.bottom}
         onClose={() => toggleDrawer('bottom', false)}
       >
         <div
           tabIndex={0}
-          role='button'
+          role="button"
           onClick={() => toggleDrawer('bottom', false)}
           onKeyDown={() => toggleDrawer('bottom', false)}
         >
@@ -134,13 +134,13 @@ const NavigationDrawer = props => {
         </div>
       </Drawer>
       <Drawer
-        anchor='right'
+        anchor="right"
         open={isDrawerOpen.right}
         onClose={() => toggleDrawer('right', false)}
       >
         <div
           tabIndex={0}
-          role='button'
+          role="button"
           onClick={() => toggleDrawer('right', false)}
           onKeyDown={() => toggleDrawer('right', false)}
         >
@@ -158,8 +158,8 @@ NavigationDrawer.propTypes = {
   toggleDrawer: PropTypes.func.isRequired,
   isDrawerOpen: PropTypes.shape({
     side: PropTypes.string,
-    open: PropTypes.bool
-  })
+    open: PropTypes.bool,
+  }),
 };
 
 export default withStyles(muiStyles)(NavigationDrawer);

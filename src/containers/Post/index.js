@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
-import actions from '../../actions.js';
+import actions from '../../actions';
 import messages from './messages';
 import styles from './styles.css';
 import LoadingIndicator from '../../components/LoadingIndicator';
@@ -26,9 +26,9 @@ export class Post extends React.Component {
     const { posts, deletePost } = this.props;
 
     return (
-      <div className='post'>
+      <div className="post">
         <Helmet
-          title='Post'
+          title="Post"
           meta={[{ name: 'description', content: 'Description of Post' }]}
         />
         {/* LoadingIndicator will show if there is slow network. To view -> chrome developer tools 
@@ -48,11 +48,11 @@ Post.propTypes = {};
 
 const mapStateToProps = state => {
   return {
-    posts: state.post.posts
+    posts: state.post.posts,
   };
 };
 
 export default connect(
   mapStateToProps,
-  actions
+  actions,
 )(Post);

@@ -10,11 +10,11 @@ import {
   FETCH_POSTS_REQUEST,
   FETCH_POSTS_SUCCESS,
   HANLDE_POSTS_FAILURE,
-  DELETE_POST_SUCCESS
+  DELETE_POST_SUCCESS,
 } from './constants';
 
 const initialState = {
-  posts: []
+  posts: [],
 };
 
 const postReducer = (state = initialState, action) => {
@@ -23,16 +23,16 @@ const postReducer = (state = initialState, action) => {
     case FETCH_POSTS_SUCCESS:
       newState = update(state, {
         posts: {
-          $set: action.posts
-        }
+          $set: action.posts,
+        },
       });
       return newState;
 
     case DELETE_POST_SUCCESS:
       newState = update(state, {
         posts: {
-          $splice: [[action.index, 1]]
-        }
+          $splice: [[action.index, 1]],
+        },
       });
       return newState;
 

@@ -22,50 +22,50 @@ import styles from './styles.css';
 
 const muiStyles = {
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   grow: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   menuButton: {
     marginLeft: -12,
-    marginRight: 20
-  }
+    marginRight: 20,
+  },
 };
 
 const Header = props => {
   const { classes } = props;
 
-  const loginLink = props => <Link to='/login' {...props} />;
-  const signupLink = props => <Link to='/signup' {...props} />;
-  const todoLink = props => <Link to='/todo' {...props} />;
-  const postLink = props => <Link to='/post' {...props} />;
+  const loginLink = props => <Link to="/login" {...props} />;
+  const signupLink = props => <Link to="/signup" {...props} />;
+  const todoLink = props => <Link to="/todo" {...props} />;
+  const postLink = props => <Link to="/post" {...props} />;
 
   return (
-    <div className='header'>
+    <div className="header">
       <div className={classes.root}>
-        <AppBar position='static'>
+        <AppBar position="static">
           <Toolbar>
             <IconButton
               className={classes.menuButton}
-              color='inherit'
-              aria-label='Menu'
+              color="inherit"
+              aria-label="Menu"
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant='h6' color='inherit' className={classes.grow}>
+            <Typography variant="h6" color="inherit" className={classes.grow}>
               Boilerplate
             </Typography>
-            <Button component={loginLink} color='inherit'>
+            <Button component={loginLink} color="inherit">
               Login
             </Button>
-            <Button component={signupLink} color='inherit'>
+            <Button component={signupLink} color="inherit">
               Signup
             </Button>
-            <Button component={todoLink} color='inherit'>
+            <Button component={todoLink} color="inherit">
               Todo
             </Button>
-            <Button component={postLink} color='inherit'>
+            <Button component={postLink} color="inherit">
               Post
             </Button>
           </Toolbar>
@@ -78,7 +78,7 @@ const Header = props => {
 const { bool, object } = PropTypes;
 
 Header.propTypes = {
-  classes: object.isRequired
+  classes: object.isRequired,
 };
 
 export default withStyles(muiStyles)(Header);

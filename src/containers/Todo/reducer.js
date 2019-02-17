@@ -9,7 +9,7 @@ import update from 'immutability-helper';
 import {
   FETCH_TODOS_REQUEST,
   FETCH_TODOS_SUCCESS,
-  FETCH_TODOS_FAILURE
+  FETCH_TODOS_FAILURE,
 } from './constants';
 
 const initialState = {
@@ -17,8 +17,8 @@ const initialState = {
   isFetching: false,
   error: {
     isError: false,
-    errorMessage: ''
-  }
+    errorMessage: '',
+  },
 };
 
 const todoReducer = (state = initialState, action) => {
@@ -27,27 +27,27 @@ const todoReducer = (state = initialState, action) => {
     case FETCH_TODOS_REQUEST:
       newState = update(state, {
         isFetching: {
-          $set: action.isFetching
-        }
+          $set: action.isFetching,
+        },
       });
       return newState;
 
     case FETCH_TODOS_SUCCESS:
       newState = update(state, {
         todos: {
-          $set: action.todos
-        }
+          $set: action.todos,
+        },
       });
       return newState;
 
     case FETCH_TODOS_FAILURE:
       newState = update(state, {
         error: {
-          $merge: action.error
+          $merge: action.error,
         },
         isFetching: {
-          $set: false
-        }
+          $set: false,
+        },
       });
       return newState;
     default:

@@ -1,25 +1,20 @@
 /*
- * 
+ *
  * Login reducer
  *
  */
 
 import update from 'immutability-helper';
 
-import {
-  DEFAULT_ACTION,
-} from './constants';
+import { DEFAULT_ACTION } from './constants';
 
-
-const initialState = {
-}
+const initialState = {};
 
 const loginReducer = (state = initialState, action) => {
   let newState;
   switch (action.type) {
     case DEFAULT_ACTION:
-      newState = update(state, {}
-      );
+      newState = update(state, {});
       return newState;
     default:
       return state;

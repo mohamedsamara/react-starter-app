@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
-import actions from '../../actions.js';
+import actions from '../../actions';
 import messages from './messages';
 import styles from './styles.css';
 import NavigationDrawer from '../../components/NavigationDrawer';
@@ -20,9 +20,9 @@ export class Navigation extends React.Component {
     const { toggleDrawer, isDrawerOpen } = this.props;
 
     return (
-      <div className='navigation'>
+      <div className="navigation">
         <Helmet
-          title='Navigation'
+          title="Navigation"
           meta={[{ name: 'description', content: 'Description of Navigation' }]}
         />
         <NavigationDrawer
@@ -38,11 +38,11 @@ Navigation.propTypes = {};
 
 const mapStateToProps = state => {
   return {
-    isDrawerOpen: state.navigation.isDrawerOpen
+    isDrawerOpen: state.navigation.isDrawerOpen,
   };
 };
 
 export default connect(
   mapStateToProps,
-  actions
+  actions,
 )(Navigation);

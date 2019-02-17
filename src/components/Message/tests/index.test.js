@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import Message from '../index';
 
-let error = { isError: false, errorMessage: 'test' };
+const error = { isError: false, errorMessage: 'test' };
 
 const renderComponent = (props = {}) =>
   shallow(<Message {...props} error={error} />);

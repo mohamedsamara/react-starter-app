@@ -19,8 +19,8 @@ describe('<Dashboard />', () => {
       renderedComponent.contains(
         <div className={styles.dashboard}>
           <FormattedMessage {...messages.dashboardMessage} />
-        </div>
-      )
+        </div>,
+      ),
     ).toBe(true);
   });
 });

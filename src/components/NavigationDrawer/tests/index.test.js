@@ -5,18 +5,20 @@ import NavigationDrawer from '../index';
 
 describe('<NavigationDrawer />', () => {
   it('should render an <NavigationDrawer> tag', () => {
-    let isDrawer = {
+    const isDrawer = {
       top: false,
       left: false,
       bottom: false,
-      right: false
+      right: false,
     };
+
+    const toggleDrawer = jest.fn();
 
     const wrapper = shallow(
       <NavigationDrawer
         toggleDrawer={(side, open) => toggleDrawer(side, open)}
         isDrawerOpen={isDrawer}
-      />
+      />,
     );
 
     expect(wrapper.exists()).toBe(true);

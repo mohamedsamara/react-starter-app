@@ -8,8 +8,8 @@ describe('todoReducer', () => {
       isFetching: false,
       error: {
         isError: false,
-        errorMessage: ''
-      }
+        errorMessage: '',
+      },
     });
   });
 

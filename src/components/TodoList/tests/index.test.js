@@ -9,14 +9,14 @@ const todos = [
     userId: 1,
     id: 1,
     title: 'delectus aut autem',
-    completed: false
+    completed: false,
   },
   {
     userId: 1,
     id: 2,
     title: 'quis ut nam facilis et officia qui',
-    completed: false
-  }
+    completed: false,
+  },
 ];
 
 const renderComponent = (props = {}) =>
@@ -31,7 +31,7 @@ describe('<TodoList />', () => {
 
   it('should <TodoList> render correctly', () => {
     const component = renderer.create(<TodoList todos={todos} />);
-    let tree = component.toJSON();
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
