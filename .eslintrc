@@ -38,6 +38,7 @@
     "no-alert": "error",
     "no-param-reassign": "off",
     "radix": "off",
+    "object-shorthand": "off",
     "no-underscore-dangle": "off",
     "react/require-default-props": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],

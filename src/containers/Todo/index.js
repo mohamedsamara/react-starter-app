@@ -38,8 +38,6 @@ export class Todo extends React.Component {
   }
 }
 
-Todo.propTypes = {};
-
 const mapStateToProps = state => {
   return {
     todos: state.todo.todos,

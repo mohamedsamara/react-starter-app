@@ -22,6 +22,8 @@ import MailIcon from '@material-ui/icons/Mail';
 import messages from './messages';
 import styles from './styles.css';
 
+import { isDrawerOpen } from '../../containers/Navigation/types';
+
 const muiStyles = {
   list: {
     width: 250,
@@ -151,15 +153,12 @@ const NavigationDrawer = props => {
   );
 };
 
-const { bool } = PropTypes;
+const { func, object } = PropTypes;
 
 NavigationDrawer.propTypes = {
-  classes: PropTypes.object.isRequired,
-  toggleDrawer: PropTypes.func.isRequired,
-  isDrawerOpen: PropTypes.shape({
-    side: PropTypes.string,
-    open: PropTypes.bool,
-  }),
+  classes: object.isRequired,
+  toggleDrawer: func.isRequired,
+  isDrawerOpen: isDrawerOpen,
 };
 
 export default withStyles(muiStyles)(NavigationDrawer);

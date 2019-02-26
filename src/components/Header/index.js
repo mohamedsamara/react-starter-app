@@ -75,7 +75,7 @@ const Header = props => {
   );
 };
 
-const { bool, object } = PropTypes;
+const { object } = PropTypes;
 
 Header.propTypes = {
   classes: object.isRequired,

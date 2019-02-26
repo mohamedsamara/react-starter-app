@@ -5,7 +5,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import ReduxToastr from 'react-redux-toastr';
@@ -24,7 +23,5 @@ const Notification = props => {
     />
   );
 };
-
-Notification.propTypes = {};
 
 export default Notification;

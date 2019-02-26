@@ -5,7 +5,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
@@ -19,8 +18,5 @@ const Page404 = props => {
     </div>
   );
 };
-
-const { bool } = PropTypes;
-Page404.propTypes = {};
 
 export default Page404;

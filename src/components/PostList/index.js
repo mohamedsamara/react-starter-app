@@ -22,6 +22,8 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import messages from './messages';
 import styles from './styles.css';
 
+import { posts } from '../../containers/Post/types';
+
 const muiStyles = theme => ({
   root: {
     width: '100%',
@@ -78,9 +80,10 @@ const PostList = props => {
   return <div className={styles.postList}>{postNodes}</div>;
 };
 
-const { bool, object } = PropTypes;
+const { object } = PropTypes;
 PostList.propTypes = {
   classes: object.isRequired,
+  posts: posts,
 };
 
 export default withStyles(muiStyles)(PostList);

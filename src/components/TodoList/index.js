@@ -19,6 +19,8 @@ import Typography from '@material-ui/core/Typography';
 import messages from './messages';
 import styles from './styles.css';
 
+import { todos } from '../../containers/Todo/types';
+
 const muiStyles = {
   card: {
     marginBottom: 15,
@@ -53,14 +55,7 @@ const TodoList = props => {
 };
 
 TodoList.propTypes = {
-  todos: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      completed: PropTypes.bool,
-      id: PropTypes.number.isRequired,
-      userId: PropTypes.number,
-    }),
-  ),
+  todos: todos,
 };
 
 export default withStyles(muiStyles)(TodoList);

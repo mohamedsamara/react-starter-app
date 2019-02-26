@@ -5,7 +5,6 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
 
 import messages from './messages';
@@ -18,8 +17,5 @@ const Dashboard = props => {
     </div>
   );
 };
-
-const { bool } = PropTypes;
-Dashboard.propTypes = {};
 
 export default Dashboard;
