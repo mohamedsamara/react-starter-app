@@ -27,6 +27,10 @@ npm run build
 
 - [Redux Thunk](https://github.com/reduxjs/redux-thunk)
 
+- [Jest](https://jestjs.io/)
+
+- [Enzyme](https://airbnb.io/enzyme/)
+
 - [Webpack](https://webpack.js.org/)
 
 - [SASS](https://sass-lang.com/)

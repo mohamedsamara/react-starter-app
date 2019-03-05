@@ -3,3 +3,5 @@ node_modules/
 generators/
 package-lock.json
 .vscode
+README.md
+
