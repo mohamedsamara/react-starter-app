@@ -135,7 +135,6 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "sanitize.css": "^8.0.0",
-    "save-dev": "^2.0.0",
     "simple-line-icons": "^2.4.1",
     "validator": "^10.9.0"
   }

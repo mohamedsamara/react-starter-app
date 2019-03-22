@@ -4,6 +4,6 @@
  *
  */
 
-export const FETCH_TODOS_REQUEST = 'src/Dashboard/FETCH_TODOS_REQUEST';
-export const FETCH_TODOS_SUCCESS = 'src/Dashboard/FETCH_TODOS_SUCCESS';
-export const FETCH_TODOS_FAILURE = 'src/Dashboard/FETCH_TODOS_FAILURE';
+export const FETCH_TODOS_REQUEST = 'src/Todo/FETCH_TODOS_REQUEST';
+export const FETCH_TODOS_SUCCESS = 'src/Todo/FETCH_TODOS_SUCCESS';
+export const FETCH_TODOS_FAILURE = 'src/Todo/FETCH_TODOS_FAILURE';
