@@ -80,9 +80,10 @@ const PostList = props => {
   return <div className={styles.postList}>{postNodes}</div>;
 };
 
-const { object } = PropTypes;
+const { object, func } = PropTypes;
 PostList.propTypes = {
   classes: object.isRequired,
+  deletePost: func,
   posts: posts,
 };
 

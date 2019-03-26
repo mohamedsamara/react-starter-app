@@ -13,14 +13,14 @@ import SignupPage from '../containers/Signup';
 import NotFoundPage from '../components/Page404';
 
 // layout
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Notifications from '../components/Notification';
+import TopHeader from '../containers/TopHeader';
 
 const PublicRoute = () => (
   <div className="application">
     <Notifications />
-    <Header />
+    <TopHeader />
     <main className="main">
       <div className="wrapper">
         <Switch>

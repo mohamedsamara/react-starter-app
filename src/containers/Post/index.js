@@ -16,6 +16,7 @@ import styles from './styles.css';
 import LoadingIndicator from '../../components/LoadingIndicator';
 
 import PostList from '../../components/PostList';
+import { posts } from './types';
 
 export class Post extends React.Component {
   componentDidMount() {
@@ -43,8 +44,11 @@ export class Post extends React.Component {
   }
 }
 
-const { bool } = PropTypes;
-Post.propTypes = {};
+const { func } = PropTypes;
+Post.propTypes = {
+  deletePost: func.isRequired,
+  posts: posts,
+};
 
 const mapStateToProps = state => {
   return {

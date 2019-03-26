@@ -19,7 +19,7 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx)$': 'babel-jest',
     '.+\\.(css|styl|less|sass|scss)$':
-      '<rootDir>/node_modules/jest-css-modules-transform'
+      '<rootDir>/node_modules/jest-css-modules-transform',
   },
 
   testPathIgnorePatterns: ['\\\\node_modules\\\\'],
@@ -30,5 +30,5 @@ module.exports = {
 
   snapshotSerializers: ['enzyme-to-json/serializer'],
 
-  verbose: true
+  verbose: true,
 };

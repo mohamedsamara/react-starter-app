@@ -16,6 +16,7 @@ import styles from './styles.css';
 import TodoList from '../../components/TodoList';
 import Message from '../../components/Message';
 import LoadingIndicator from '../../components/LoadingIndicator';
+import { todos } from './types';
 
 export class Todo extends React.Component {
   componentDidMount() {
@@ -37,6 +38,10 @@ export class Todo extends React.Component {
     );
   }
 }
+
+Todo.propTypes = {
+  todos: todos,
+};
 
 const mapStateToProps = state => {
   return {

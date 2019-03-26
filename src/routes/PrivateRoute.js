@@ -15,7 +15,7 @@ import Post from '../containers/Post';
 
 // layout
 import Navigation from '../containers/Navigation';
-import Header from '../components/Header';
+import TopHeader from '../containers/TopHeader';
 import Footer from '../components/Footer';
 import Notifications from '../components/Notification';
 
@@ -23,7 +23,7 @@ const PrivateRoute = () => (
   <div className="application">
     <Navigation />
     <Notifications />
-    <Header />
+    <TopHeader />
     <main className="main">
       <div className="wrapper">
         <Switch>

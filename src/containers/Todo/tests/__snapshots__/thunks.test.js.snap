@@ -1209,13 +1209,13 @@ Array [
           "userId": 10,
         },
       ],
-      "type": "src/Dashboard/FETCH_TODOS_SUCCESS",
+      "type": "src/Todo/FETCH_TODOS_SUCCESS",
     },
   ],
   Array [
     Object {
       "isFetching": false,
-      "type": "src/Dashboard/FETCH_TODOS_REQUEST",
+      "type": "src/Todo/FETCH_TODOS_REQUEST",
     },
   ],
 ]

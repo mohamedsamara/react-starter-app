@@ -12,6 +12,7 @@ import { reducer as toastrReducer } from 'react-redux-toastr';
 import navigationReducer from './containers/Navigation/reducer';
 import todoReducer from './containers/Todo/reducer';
 import postReducer from './containers/Post/reducer';
+import topHeaderReducer from './containers/TopHeader/reducer';
 
 const createReducer = history =>
   combineReducers({
@@ -20,6 +21,7 @@ const createReducer = history =>
     navigation: navigationReducer,
     todo: todoReducer,
     post: postReducer,
+    header: topHeaderReducer,
   });
 
 export default createReducer;
