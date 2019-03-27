@@ -44,3 +44,7 @@ npm run test
 - [Material UI](https://material-ui.com/)
 
 - [React Transition Group](https://reactcommunity.org/react-transition-group/)
+
+- [ESLint](https://eslint.org/)
+
+- [Stylelint](https://stylelint.io/)
