@@ -19,6 +19,10 @@ npm start
 
 npm run build
 
+## Run test with Jest
+
+npm run test
+
 ## Languages & tools
 
 - [React](https://reactjs.org/)
@@ -38,3 +42,5 @@ npm run build
 - [LESS](http://lesscss.org/)
 
 - [Material UI](https://material-ui.com/)
+
+- [React Transition Group](https://reactcommunity.org/react-transition-group/)

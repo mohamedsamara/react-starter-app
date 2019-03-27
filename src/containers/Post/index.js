@@ -14,9 +14,9 @@ import actions from '../../actions';
 import messages from './messages';
 import styles from './styles.css';
 import LoadingIndicator from '../../components/LoadingIndicator';
-
-import PostList from '../../components/PostList';
 import { posts } from './types';
+
+const PostList = lazy(() => import('../../components/PostList'));
 
 export class Post extends React.Component {
   componentDidMount() {
@@ -34,11 +34,12 @@ export class Post extends React.Component {
         />
         {/* LoadingIndicator will show if there is slow network. To view -> chrome developer tools 
           -> network -> change from online to slow 3g */}
-
-        <PostList
-          posts={posts}
-          deletePost={(id, index) => deletePost(id, index)}
-        />
+        <Suspense fallback={<LoadingIndicator message="Loading Posts" />}>
+          <PostList
+            posts={posts}
+            deletePost={(id, index) => deletePost(id, index)}
+          />
+        </Suspense>
       </div>
     );
   }

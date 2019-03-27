@@ -8,7 +8,7 @@
   "rules": {
     "prettier/prettier": true,
     "number-leading-zero": null,
-    "block-no-empty": true,
+    "block-no-empty": null,
     "color-no-invalid-hex": true,
     "font-family-no-missing-generic-family-keyword": null,
     "comment-empty-line-before": [
@@ -24,6 +24,6 @@
         "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
       }
     ],
-    "unit-whitelist": ["px", "em", "deg", "rem", "%", "s"]
+    "unit-whitelist": ["px", "em", "deg", "rem", "%", "s", "ms"]
   }
 }

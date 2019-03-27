@@ -18,6 +18,7 @@ import ExpansionPanelActions from '@material-ui/core/ExpansionPanelActions';
 import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import DeleteIcon from '@material-ui/icons/Delete';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import messages from './messages';
 import styles from './styles.css';
@@ -46,38 +47,44 @@ const PostList = props => {
   const { posts, classes, deletePost } = props;
 
   const postNodes = posts.map((post, index) => (
-    <div key={post.id} className={classes.root} key={post.id}>
-      <ExpansionPanel
-        className={`${classes.accordionSpace} ${classes.expanded}`}
-      >
-        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography className={classes.heading}>{post.title}</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <Typography>{post.body}</Typography>
-        </ExpansionPanelDetails>
+    <CSSTransition key={post.id} timeout={2000} classNames="fade">
+      <div className={classes.root} key={post.id}>
+        <ExpansionPanel
+          className={`${classes.accordionSpace} ${classes.expanded}`}
+        >
+          <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography className={classes.heading}>{post.title}</Typography>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails>
+            <Typography>{post.body}</Typography>
+          </ExpansionPanelDetails>
 
-        <Divider />
-        <ExpansionPanelActions>
-          <Button size="small" color="primary">
-            Save
-          </Button>
-          <Button
-            color="primary"
-            size="small"
-            onClick={() => {
-              deletePost(post.id, index);
-            }}
-          >
-            Delete
-            <DeleteIcon fontSize="small" />
-          </Button>
-        </ExpansionPanelActions>
-      </ExpansionPanel>
-    </div>
+          <Divider />
+          <ExpansionPanelActions>
+            <Button size="small" color="primary">
+              Save
+            </Button>
+            <Button
+              color="primary"
+              size="small"
+              onClick={() => {
+                deletePost(post.id, index);
+              }}
+            >
+              Delete
+              <DeleteIcon fontSize="small" />
+            </Button>
+          </ExpansionPanelActions>
+        </ExpansionPanel>
+      </div>
+    </CSSTransition>
   ));
 
-  return <div className={styles.postList}>{postNodes}</div>;
+  return (
+    <div className={styles.postList}>
+      <TransitionGroup>{postNodes}</TransitionGroup>
+    </div>
+  );
 };
 
 const { object, func } = PropTypes;
