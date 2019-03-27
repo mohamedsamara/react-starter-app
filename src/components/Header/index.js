@@ -41,6 +41,9 @@ const muiStyles = {
 const Header = props => {
   const { classes, anchorEl, openMenu, closeMenu } = props;
 
+  const enLink = props => <Link to="/en" {...props} />;
+  const arLink = props => <Link to="/ar" {...props} />;
+
   return (
     <div className="header">
       <div className={classes.root}>
@@ -65,6 +68,14 @@ const Header = props => {
             >
               <MoreVertIcon />
             </IconButton>
+
+            <Button component={enLink} color="inherit">
+              En
+            </Button>
+            <Button component={arLink} color="inherit">
+              Ar
+            </Button>
+
             <Menu
               id="simple-menu"
               anchorEl={anchorEl}
