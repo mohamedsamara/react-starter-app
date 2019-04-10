@@ -1,5 +1,7 @@
 # React Starter App
 
+![React Starter App](/src/images/React-Starter-App.gif)
+
 ## Install
 
 Some basic Git commands are:
