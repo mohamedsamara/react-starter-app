@@ -39,10 +39,7 @@ const muiStyles = {
 };
 
 const Header = props => {
-  const { classes, anchorEl, openMenu, closeMenu } = props;
-
-  const enLink = props => <Link to="/en" {...props} />;
-  const arLink = props => <Link to="/ar" {...props} />;
+  const { classes, anchorEl, openMenu, closeMenu, setLocale } = props;
 
   return (
     <div className="header">
@@ -69,10 +66,10 @@ const Header = props => {
               <MoreVertIcon />
             </IconButton>
 
-            <Button component={enLink} color="inherit">
+            <Button onClick={() => setLocale('en')} color="inherit">
               En
             </Button>
-            <Button component={arLink} color="inherit">
+            <Button onClick={() => setLocale('ar')} color="inherit">
               Ar
             </Button>
 

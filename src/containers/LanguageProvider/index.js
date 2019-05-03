@@ -6,20 +6,31 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { IntlProvider } from 'react-intl';
+import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
+import { IntlProvider } from 'react-intl';
 
 import actions from '../../actions';
 
 export class LanguageProvider extends React.Component {
-  componentDidMount() {}
+  componentDidMount() {
+    if (localStorage.appLang) {
+      this.props.setLocale(localStorage.appLang);
+    }
+  }
 
   render() {
     const { locale, messages } = this.props;
+
     return (
-      <IntlProvider locale={locale} messages={messages[locale]}>
-        {React.Children.only(this.props.children)}
-      </IntlProvider>
+      <div>
+        <Helmet>
+          <html lang={locale} />
+        </Helmet>
+        <IntlProvider locale={locale} messages={messages[locale]}>
+          {React.Children.only(this.props.children)}
+        </IntlProvider>
+      </div>
     );
   }
 }

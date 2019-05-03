@@ -17,13 +17,14 @@ export class TopHeader extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { anchorEl, openMenu, closeMenu } = this.props;
+    const { anchorEl, openMenu, closeMenu, setLocale } = this.props;
 
     return (
       <Header
         openMenu={target => openMenu(target)}
         closeMenu={() => closeMenu()}
         anchorEl={anchorEl}
+        setLocale={lang => setLocale(lang)}
       />
     );
   }

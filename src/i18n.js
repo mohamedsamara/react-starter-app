@@ -12,7 +12,7 @@ import ar from 'react-intl/locale-data/ar';
 import enTranslationMessages from './translations/en.json';
 import arTranslationMessages from './translations/ar.json';
 
-export const appLocales = ['en'];
+export const appLocales = ['en', 'ar'];
 
 addLocaleData(en);
 addLocaleData(ar);
