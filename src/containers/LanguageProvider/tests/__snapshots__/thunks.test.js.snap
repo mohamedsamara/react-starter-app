@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`languageProvider Thunk should dispatch correct actions when handling setLocale 1`] = `
+[MockFunction] {
+  "calls": Array [
+    Array [
+      Object {
+        "locale": "en",
+        "type": "src/LanguageProvider/SET_LOCALE",
+      },
+    ],
+  ],
+  "results": Array [
+    Object {
+      "type": "return",
+      "value": undefined,
+    },
+  ],
+}
+`;
