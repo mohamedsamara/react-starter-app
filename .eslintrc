@@ -37,6 +37,7 @@
     "no-console": 0,
     "no-alert": "error",
     "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
     "radix": "off",
     "object-shorthand": "off",
     "no-underscore-dangle": "off",

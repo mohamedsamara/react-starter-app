@@ -13,6 +13,8 @@ import { MuiThemeProvider } from '@material-ui/core/styles';
 import store, { history } from './store';
 import Routes from './routes/routes';
 import theme from './theme';
+import LanguageProvider from './containers/LanguageProvider';
+import { translationMessages } from './i18n';
 
 // Import application sass styles
 import './styles/sass/style.scss';
@@ -38,9 +40,11 @@ import 'react-redux-toastr/lib/css/react-redux-toastr.min.css';
 const app = () => (
   <MuiThemeProvider theme={theme}>
     <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <Routes />
-      </ConnectedRouter>
+      <LanguageProvider messages={translationMessages}>
+        <ConnectedRouter history={history}>
+          <Routes />
+        </ConnectedRouter>
+      </LanguageProvider>
     </Provider>
   </MuiThemeProvider>
 );

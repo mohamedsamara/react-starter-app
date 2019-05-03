@@ -17,7 +17,7 @@ export const history = createHistory({
   hashType: 'noslash',
 });
 
-const middlewares = [logger, thunk, routerMiddleware(history)];
+const middlewares = [thunk, routerMiddleware(history)];
 
 const enhancers = [applyMiddleware(...middlewares)];
 
