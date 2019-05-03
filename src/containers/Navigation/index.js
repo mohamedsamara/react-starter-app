@@ -7,7 +7,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 
 import actions from '../../actions';
@@ -21,10 +20,6 @@ export class Navigation extends React.Component {
 
     return (
       <div className="navigation">
-        <Helmet
-          title="Navigation"
-          meta={[{ name: 'description', content: 'Description of Navigation' }]}
-        />
         <NavigationDrawer
           toggleDrawer={(side, open) => toggleDrawer(side, open)}
           isDrawerOpen={isDrawerOpen}
