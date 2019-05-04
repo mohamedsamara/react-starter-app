@@ -15,7 +15,7 @@ import styles from './styles.css';
 
 const Footer = props => {
   const infoLinks = [
-    { id: 0, name: 'Contact Us', to: 'contact-us' },
+    { id: 0, name: 'Contact Us', to: 'contact' },
     { id: 1, name: 'Returns', to: 'return' },
     { id: 2, name: 'Shipping', to: 'shipping' },
   ];
@@ -23,17 +23,26 @@ const Footer = props => {
   const footerBusinessLinks = (
     <ul className="support-links">
       <li className="footer-link">
-        <Link to="/signup">Signup</Link>
+        <FormattedMessage {...messages.signup}>
+          {txt => <Link to="/signup">{txt}</Link>}
+        </FormattedMessage>
       </li>
       <li className="footer-link">
-        <Link to="/login">Login</Link>
+        <FormattedMessage {...messages.signin}>
+          {txt => <Link to="/login">{txt}</Link>}
+        </FormattedMessage>
       </li>
     </ul>
   );
 
   const footerLinks = infoLinks.map(item => (
     <li key={item.id} className="footer-link">
-      <Link to={`/${item.to}`}>{item.name}</Link>
+      <FormattedMessage
+        id={`src.components.Footer.${item.to}`}
+        key={`${item.id}`}
+      >
+        {message => <Link to={`/${item.to}`}>{message}</Link>}
+      </FormattedMessage>
     </li>
   ));
 
@@ -48,7 +57,9 @@ const Footer = props => {
           <div className="footer-content">
             <div className="footer-block">
               <div className="block-title">
-                <h2>Customer Service</h2>
+                <FormattedMessage {...messages.blockOne}>
+                  {txt => <h2>{txt}</h2>}
+                </FormattedMessage>
               </div>
               <div className="block-content">
                 <ul>{footerLinks}</ul>
@@ -56,7 +67,9 @@ const Footer = props => {
             </div>
             <div className="footer-block">
               <div className="block-title">
-                <h2>Links</h2>
+                <FormattedMessage {...messages.blockTwo}>
+                  {txt => <h2>{txt}</h2>}
+                </FormattedMessage>
               </div>
               <div className="block-content">
                 <ul>{footerLinks}</ul>
@@ -64,9 +77,13 @@ const Footer = props => {
             </div>
             <div className="footer-block">
               <div className="block-title">
-                <h2>Newsletter</h2>
+                <div className="block-title">
+                  <FormattedMessage {...messages.blockThree}>
+                    {txt => <h2>{txt}</h2>}
+                  </FormattedMessage>
+                </div>
+                <div className="block-content">{footerBusinessLinks}</div>
               </div>
-              <div className="block-content">{footerBusinessLinks}</div>
             </div>
           </div>
         )}

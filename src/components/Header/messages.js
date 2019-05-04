@@ -6,8 +6,20 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  header: {
-    id: 'src.components.Header.header',
-    defaultMessage: 'This is the Header component !',
+  enToggle: {
+    id: 'src.components.Header.enToggle',
+    defaultMessage: 'English',
+  },
+  arToggle: {
+    id: 'src.components.Header.arToggle',
+    defaultMessage: 'Arabic',
+  },
+  signinLink: {
+    id: 'src.components.Header.signinLink',
+    defaultMessage: 'Sign In',
+  },
+  signupLink: {
+    id: 'src.components.Header.signupLink',
+    defaultMessage: 'Sign Up',
   },
 });

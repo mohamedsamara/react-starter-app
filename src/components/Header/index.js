@@ -66,12 +66,21 @@ const Header = props => {
               <MoreVertIcon />
             </IconButton>
 
-            <Button onClick={() => setLocale('en')} color="inherit">
-              En
-            </Button>
-            <Button onClick={() => setLocale('ar')} color="inherit">
-              Ar
-            </Button>
+            <FormattedMessage {...messages.enToggle}>
+              {txt => (
+                <Button onClick={() => setLocale('en')} color="inherit">
+                  {txt}
+                </Button>
+              )}
+            </FormattedMessage>
+
+            <FormattedMessage {...messages.arToggle}>
+              {txt => (
+                <Button onClick={() => setLocale('ar')} color="inherit">
+                  {txt}
+                </Button>
+              )}
+            </FormattedMessage>
 
             <Menu
               id="simple-menu"
@@ -80,10 +89,14 @@ const Header = props => {
               onClose={() => closeMenu()}
             >
               <MenuItem onClick={() => closeMenu()}>
-                <Link to="/login">Login</Link>
+                <FormattedMessage {...messages.signinLink}>
+                  {txt => <Link to="/login">{txt}</Link>}
+                </FormattedMessage>
               </MenuItem>
               <MenuItem onClick={() => closeMenu()}>
-                <Link to="/signup">Signup</Link>
+                <FormattedMessage {...messages.signupLink}>
+                  {txt => <Link to="/signup">{txt}</Link>}
+                </FormattedMessage>
               </MenuItem>
               <MenuItem onClick={() => closeMenu()}>
                 <Link to="/todo">Todos</Link>

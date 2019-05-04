@@ -1,7 +1,58 @@
 [
   {
     "id": "src.components.Dashboard.header",
-    "defaultMessage": "test1",
-    "message": "test2"
+    "message": "This is the Dashboard!"
+  },
+  {
+    "id": "src.components.Footer.blockOne",
+    "message": "Customer Service"
+  },
+  {
+    "id": "src.components.Footer.blockTwo",
+    "message": "Links"
+  },
+  {
+    "id": "src.components.Footer.blockThree",
+    "message": "Newsletter"
+  },
+  {
+    "id": "src.components.Footer.signup",
+    "message": "SignUp"
+  },
+  {
+    "id": "src.components.Footer.signin",
+    "message": "SignIn"
+  },
+  {
+    "id": "src.components.Footer.contact",
+    "message": "Contact Us"
+  },
+  {
+    "id": "src.components.Footer.return",
+    "message": "Return"
+  },
+  {
+    "id": "src.components.Footer.shipping",
+    "message": "Shipping"
+  },
+  {
+    "id": "src.components.Page404.notFoundfooter",
+    "message": "The page you are looking for was not found."
+  },
+  {
+    "id": "src.components.Header.enToggle",
+    "message": "English"
+  },
+  {
+    "id": "src.components.Header.arToggle",
+    "message": "Arabic"
+  },
+  {
+    "id": "src.components.Header.signinLink",
+    "message": "Sign In"
+  },
+  {
+    "id": "src.components.Header.signupLink",
+    "message": "Sign Up"
   }
 ]

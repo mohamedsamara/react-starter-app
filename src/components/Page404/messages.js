@@ -6,8 +6,8 @@
 import { defineMessages } from 'react-intl';
 
 export default defineMessages({
-  header: {
-    id: 'src.components.Page404.header',
-    defaultMessage: 'This is the Page404 component !',
+  notFound: {
+    id: 'src.components.Page404.notFound',
+    defaultMessage: 'The page you are looking for was not found.',
   },
 });

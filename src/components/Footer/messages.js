@@ -5,9 +5,39 @@
  */
 import { defineMessages } from 'react-intl';
 
+export const scope = 'src.components.Footer';
+
 export default defineMessages({
-  header: {
-    id: 'src.components.Footer.header',
-    defaultMessage: 'This is the Footer component !',
+  blockOne: {
+    id: `${scope}.blockOne`,
+    defaultMessage: 'Customer Service',
+  },
+  blockTwo: {
+    id: `${scope}.blockTwo`,
+    defaultMessage: 'Links',
+  },
+  blockThree: {
+    id: `${scope}.blockThree`,
+    defaultMessage: 'Newsletter',
+  },
+  signup: {
+    id: `${scope}.signup`,
+    defaultMessage: 'SignUp',
+  },
+  signin: {
+    id: `${scope}.signin`,
+    defaultMessage: 'SignIn',
+  },
+  contact: {
+    id: `${scope}.contact`,
+    defaultMessage: 'Contact Us',
+  },
+  return: {
+    id: `${scope}.return`,
+    defaultMessage: 'Returns',
+  },
+  shipping: {
+    id: `${scope}.shipping`,
+    defaultMessage: 'Shipping',
   },
 });

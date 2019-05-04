@@ -8,6 +8,6 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   dashboardMessage: {
     id: 'src.components.Dashboard.header',
-    defaultMessage: 'This is the Dashboard component !',
+    defaultMessage: 'This is the Dashboard!',
   },
 });

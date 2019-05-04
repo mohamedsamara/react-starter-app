@@ -1,7 +1,58 @@
 [
   {
     "id": "src.components.Dashboard.header",
-    "defaultMessage": "test1",
     "message": "الصفحة الرئيسية"
+  },
+  {
+    "id": "src.components.Footer.blockOne",
+    "message": "خدمة العملاء"
+  },
+  {
+    "id": "src.components.Footer.blockTwo",
+    "message": "الروابط"
+  },
+  {
+    "id": "src.components.Footer.blockThree",
+    "message": "النشرة الإخبارية"
+  },
+  {
+    "id": "src.components.Footer.signup",
+    "message": "انشاء حساب جديد"
+  },
+  {
+    "id": "src.components.Footer.signin",
+    "message": "تسجيل الدخول"
+  },
+  {
+    "id": "src.components.Footer.contact",
+    "message": "تواصل معنا"
+  },
+  {
+    "id": "src.components.Footer.return",
+    "message": "الارجاع"
+  },
+  {
+    "id": "src.components.Footer.shipping",
+    "message": "الشحن"
+  },
+  {
+    "id": "src.components.Page404.notFound",
+    "message": "الصفحة المطلوبة غير موجودة"
+  },
+  {
+    "id": "src.components.Header.enToggle",
+    "message": "الانجليزية"
+  },
+  {
+    "id": "src.components.Header.arToggle",
+    "message": "العربية"
+  },
+  {
+    "id": "src.components.Header.signinLink",
+    "message": "تسجيل الدخول"
+  },
+  {
+    "id": "src.components.Header.signupLink",
+    "message": "انشاء حساب جديد"
   }
 ]
