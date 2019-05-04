@@ -1,1 +1,13 @@
 //  rtl styles
+body.ar-style {
+  font-family: $font-family-arabic;
+  direction: rtl;
+}
+
+.ar-style .navigation {
+  text-align: right;
+}
+
+.side-nav {
+  direction: ltr;
+}

@@ -63,7 +63,7 @@ const NavigationDrawer = props => {
   );
 
   const fullList = (
-    <div className={classes.fullList}>
+    <div className={`${classes.fullList} side-nav`}>
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem button key={text}>

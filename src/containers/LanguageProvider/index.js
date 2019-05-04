@@ -26,6 +26,7 @@ export class LanguageProvider extends React.Component {
       <div>
         <Helmet>
           <html lang={locale} />
+          <body className={`${locale}-style`} />
         </Helmet>
         <IntlProvider locale={locale} messages={messages[locale]}>
           {React.Children.only(this.props.children)}
