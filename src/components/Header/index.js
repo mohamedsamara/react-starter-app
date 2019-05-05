@@ -47,13 +47,17 @@ const Header = props => {
         <AppBar position="static">
           <Toolbar>
             <IconButton
-              className={classes.menuButton}
+              className={`${classes.menuButton} header-button`}
               color="inherit"
               aria-label="Menu"
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="h6" color="inherit" className={classes.grow}>
+            <Typography
+              variant="h6"
+              color="inherit"
+              className={`${classes.grow} header-title`}
+            >
               Boilerplate
             </Typography>
             <IconButton

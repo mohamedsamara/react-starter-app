@@ -77,13 +77,11 @@ const Footer = props => {
             </div>
             <div className="footer-block">
               <div className="block-title">
-                <div className="block-title">
-                  <FormattedMessage {...messages.blockThree}>
-                    {txt => <h2>{txt}</h2>}
-                  </FormattedMessage>
-                </div>
-                <div className="block-content">{footerBusinessLinks}</div>
+                <FormattedMessage {...messages.blockThree}>
+                  {txt => <h2>{txt}</h2>}
+                </FormattedMessage>
               </div>
+              <div className="block-content">{footerBusinessLinks}</div>
             </div>
           </div>
         )}

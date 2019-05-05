@@ -26,6 +26,10 @@
     margin: 10px 0px;
   }
 
+  &:last-child {
+    border-right: 0;
+  }
+
   .block-title {
     padding-bottom: 10px;
   }
@@ -33,10 +37,6 @@
   .footer-link {
     padding-bottom: 4px;
   }
-}
-
-.footer-block:last-child {
-  border-right: 0;
 }
 
 /*

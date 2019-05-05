@@ -4,8 +4,29 @@ body.ar-style {
   direction: rtl;
 }
 
-.ar-style .navigation {
-  text-align: right;
+.ar-style {
+  .navigation {
+    text-align: right;
+  }
+
+  .header-title {
+    text-align: right;
+  }
+
+  .header-button {
+    margin-right: -12px;
+    margin-left: 20px;
+  }
+
+  .footer-block {
+    text-align: right;
+    border-right: 0;
+    border-left: $border-default;
+
+    &:last-child {
+      border-left: 0;
+    }
+  }
 }
 
 .side-nav {
