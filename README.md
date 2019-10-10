@@ -7,7 +7,7 @@
 Some basic Git commands are:
 
 ```
-$ git clone https://github.com/mohamedsamara/React-Starter-App.git
+$ git clone https://github.com/mohamedsamara/react-starter-app.git
 $ cd project
 $ npm install
 
