@@ -8,42 +8,36 @@ Some basic Git commands are:
 $ git clone https://github.com/mohamedsamara/react-starter-app.git
 $ cd project
 $ npm install
-
 ```
 
 ## Start
 
 ```
 $ npm start
-
 ```
 
 ## Simple build for production
 
 ```
 $ npm run build
-
 ```
 
 ## Run the application for production
 
 ```
 $ npm run serve
-
 ```
 
 ## Run the generators
 
 ```
 $ npm run generate
-
 ```
 
 ## Run test with Jest
 
 ```
 $ npm run test
-
 ```
 
 ## Languages & tools
