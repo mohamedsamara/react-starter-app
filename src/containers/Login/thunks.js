@@ -1,6 +1,6 @@
 /*
  *
- * Login
+ * Login thunks
  *
  */
 

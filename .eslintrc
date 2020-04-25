@@ -9,7 +9,7 @@
     "plugin:jest/recommended",
     "plugin:import/recommended"
   ],
-  "plugins": ["react", "prettier", "jsx-a11y", "import", "babel"],
+  "plugins": ["react", "prettier", "jsx-a11y", "import", "babel", "html"],
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",

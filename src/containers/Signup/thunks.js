@@ -1,6 +1,6 @@
 /*
  *
- * Signup
+ * Signup thunks
  *
  */
 

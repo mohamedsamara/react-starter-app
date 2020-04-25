@@ -29,7 +29,7 @@ const muiStyles = {
   root: {
     flexGrow: 1,
   },
-  grow: {
+  title: {
     flexGrow: 1,
   },
   menuButton: {
@@ -56,9 +56,9 @@ const Header = props => {
             <Typography
               variant="h6"
               color="inherit"
-              className={`${classes.grow} header-title`}
+              className={`${classes.title} header-title`}
             >
-              Boilerplate
+              React Starter
             </Typography>
             <IconButton
               color="inherit"
@@ -91,17 +91,18 @@ const Header = props => {
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={() => closeMenu()}
+              PaperProps={{
+                style: {
+                  left: '50%',
+                  transform: 'translateX(-77%) translateY(32%)',
+                },
+              }}
+              MenuListProps={{
+                style: {
+                  padding: 0,
+                },
+              }}
             >
-              <MenuItem onClick={() => closeMenu()}>
-                <FormattedMessage {...messages.signinLink}>
-                  {txt => <Link to="/login">{txt}</Link>}
-                </FormattedMessage>
-              </MenuItem>
-              <MenuItem onClick={() => closeMenu()}>
-                <FormattedMessage {...messages.signupLink}>
-                  {txt => <Link to="/signup">{txt}</Link>}
-                </FormattedMessage>
-              </MenuItem>
               <MenuItem onClick={() => closeMenu()}>
                 <Link to="/todo">Todos</Link>
               </MenuItem>

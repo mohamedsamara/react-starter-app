@@ -1,6 +1,6 @@
 /*
  *
- * Post
+ * Post types
  *
  */
 

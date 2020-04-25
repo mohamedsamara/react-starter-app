@@ -1,7 +1,5 @@
 # React Starter App
 
-![React Starter App](/src/images/React-Starter-App.gif)
-
 ## Install
 
 Some basic Git commands are:
@@ -15,15 +13,31 @@ $ npm install
 
 ## Start
 
-npm start
+```
+$ npm start
+
+```
 
 ## Simple build for production
 
-npm run build
+```
+$ npm run build
+
+```
+
+## Run the application for production
+
+```
+$ npm run serve
+
+```
 
 ## Run test with Jest
 
-npm run test
+```
+$ npm run test
+
+```
 
 ## Languages & tools
 
@@ -33,20 +47,34 @@ npm run test
 
 - [Redux Thunk](https://github.com/reduxjs/redux-thunk)
 
+- [React Intl](https://github.com/formatjs/react-intl)
+
+- [Material UI](https://material-ui.com/)
+
+- [Sass](https://sass-lang.com/)
+
+- [Less](http://lesscss.org/)
+
+- [PostCSS](https://postcss.org/)
+
 - [Jest](https://jestjs.io/)
 
 - [Enzyme](https://airbnb.io/enzyme/)
 
 - [Webpack](https://webpack.js.org/)
 
-- [SASS](https://sass-lang.com/)
-
-- [LESS](http://lesscss.org/)
-
-- [Material UI](https://material-ui.com/)
-
-- [React Transition Group](https://reactcommunity.org/react-transition-group/)
-
 - [ESLint](https://eslint.org/)
 
 - [Stylelint](https://stylelint.io/)
+
+
+
+
+
+
+
+
+
+
+
+

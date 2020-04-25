@@ -9,7 +9,7 @@ import update from 'immutability-helper';
 import { SET_LOCALE } from './constants';
 
 const initialState = {
-  locale: 'ar',
+  locale: 'en',
 };
 
 const languageProviderReducer = (state = initialState, action) => {

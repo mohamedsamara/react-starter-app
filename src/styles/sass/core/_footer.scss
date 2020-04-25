@@ -53,20 +53,8 @@
 
   li {
     padding-bottom: 8px;
-    margin: 0 auto;
+    margin: auto 5px;
     display: inline-block;
-    @include media-breakpoint-down(sm) {
-      float: left;
-      width: 25%;
-    }
-
-    a {
-      margin-left: 10px;
-      @include media-breakpoint-down(sm) {
-        display: block;
-        margin-left: 0px;
-      }
-    }
   }
 
   .facebook-icon {

@@ -13,6 +13,8 @@ describe('<Footer />', () => {
   it('should render the copyright', () => {
     const wrapper = shallow(<Footer />);
     const text = wrapper.find('.footer-copyright').text();
-    expect(text).toEqual(`© ${new Date().getFullYear()} boilerplate`);
+    expect(text).toEqual(
+      `© ${new Date().getFullYear()} React Starter Application`,
+    );
   });
 });

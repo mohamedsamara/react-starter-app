@@ -14,9 +14,9 @@ const commonPaths = require('./paths');
 module.exports = {
   mode: 'production',
   output: {
-    filename: `${commonPaths.jsFolder}/[name].[hash].js`,
     path: commonPaths.outputPath,
-    chunkFilename: '[name].[chunkhash].js'
+    filename: `${commonPaths.jsFolder}/[name].[hash].js`,
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -30,19 +30,19 @@ module.exports = {
               modules: true,
               importLoaders: 1,
               camelCase: false,
-              localIdentName: '[local]'
-            }
+              localIdentName: '[local]',
+            },
           },
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [require('cssnano'), require('autoprefixer')]
-            }
+              plugins: () => [require('cssnano'), require('autoprefixer')],
+            },
           },
           {
-            loader: 'sass-loader'
-          }
-        ]
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
         test: /\.less$/,
@@ -54,15 +54,40 @@ module.exports = {
               modules: true,
               importLoaders: 1,
               camelCase: false,
-              localIdentName: '[local]'
-            }
+              localIdentName: '[local]',
+            },
           },
-          'less-loader'
-        ]
-      }
-    ]
+          'less-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: commonPaths.imagesFolder,
+              publicPath: 'images',
+              name: '[name].[hash].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: commonPaths.fontsFolder,
+              publicPath: 'fonts',
+              name: '[name].[hash].[ext]',
+            },
+          },
+        ],
+      },
+    ],
   },
-
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
@@ -77,10 +102,10 @@ module.exports = {
           toplevel: false,
           nameCache: null,
           ie8: false,
-          keep_fnames: false
-        }
-      })
-    ]
+          keep_fnames: false,
+        },
+      }),
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -95,44 +120,41 @@ module.exports = {
         keepClosingSlash: true,
         minifyJS: true,
         minifyCSS: true,
-        minifyURLs: true
+        minifyURLs: true,
       },
-      inject: true
+      inject: true,
     }),
     new CleanWebpackPlugin([commonPaths.outputPath.split('/').pop()], {
-      root: commonPaths.root
+      root: commonPaths.root,
     }),
     new MiniCssExtractPlugin({
       filename: `${commonPaths.cssFolder}/[name].[hash].css`,
-      chunkFilename: '[id].[hash].css'
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
-
     new WebpackPwaManifest({
-      name: 'React Boilerplate',
-      short_name: 'React Boilerplate',
-      description: 'React Boilerplate!',
-      background_color: '#fafafa',
-      theme_color: '#b1624d',
+      name: 'React Starter Application',
+      short_name: 'ReactStarter',
+      description: 'React Starter Application!',
+      background_color: '#fff',
+      theme_color: '#4a68aa',
       inject: true,
       ios: true,
       icons: [
         {
-          src: commonPaths.imagesPath + '/icon-512x512.png',
+          src: commonPaths.imagesPath + '/pwa.png',
           destination: commonPaths.imagesFolder,
-          sizes: [72, 96, 128, 144, 192, 384, 512]
+          sizes: [72, 96, 128, 144, 192, 384, 512],
         },
         {
-          src: commonPaths.imagesPath + '/icon-512x512.png',
+          src: commonPaths.imagesPath + '/pwa.png',
           destination: commonPaths.imagesFolder,
           sizes: [120, 152, 167, 180],
-          ios: true
-        }
-      ]
-    })
+          ios: true,
+        },
+      ],
+    }),
   ],
-
   devtool: 'source-map',
   stats: 'errors-only',
-  bail: true
+  bail: true,
 };

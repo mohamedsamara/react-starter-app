@@ -10,9 +10,8 @@ const commonPaths = require('./paths');
 module.exports = {
   mode: 'development',
   output: {
-    filename: '[name].js',
     path: commonPaths.outputPath,
-    chunkFilename: '[name].js'
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -27,23 +26,23 @@ module.exports = {
               modules: true,
               importLoaders: 1,
               camelCase: false,
-              localIdentName: '[local]'
-            }
+              localIdentName: '[local]',
+            },
           },
           {
             loader: 'postcss-loader',
             options: {
               plugins: () => [require('autoprefixer')],
-              sourceMap: true
-            }
+              sourceMap: true,
+            },
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
-            }
-          }
-        ]
+              sourceMap: true,
+            },
+          },
+        ],
       },
       {
         test: /\.less$/,
@@ -56,28 +55,52 @@ module.exports = {
               modules: true,
               importLoaders: 1,
               camelCase: false,
-              localIdentName: '[local]'
-            }
+              localIdentName: '[local]',
+            },
           },
-          'less-loader'
-        ]
-      }
-    ]
+          'less-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: commonPaths.imagesFolder,
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: commonPaths.fontsFolder,
+              name: '[name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
   },
   devServer: {
-    disableHostCheck: true,
     historyApiFallback: true,
+    disableHostCheck: false,
     contentBase: commonPaths.outputPath,
     inline: true,
     compress: true,
-    hot: true
+    hot: true,
   },
   devtool: 'cheap-module-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: commonPaths.templatePath,
-      inject: true
-    })
-  ]
+      inject: true,
+    }),
+  ],
 };

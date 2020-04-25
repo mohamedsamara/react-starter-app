@@ -6,6 +6,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack",
+    "serve": "serve --single build",
     "watch": "webpack --watch --display-error-details",
     "build:clean": "rimraf build coverage",
     "test": "jest",
@@ -35,13 +36,14 @@
     "react",
     "redux",
     "redux-thunk",
+    "react-intl",
     "jest",
     "enzyme",
     "sass",
     "less"
   ],
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mohamedsamara/react-starter-app/issues"
   },
@@ -72,6 +74,7 @@
     "eslint-config-prettier": "^4.0.0",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-html": "^6.0.2",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jest": "^22.3.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
@@ -98,6 +101,7 @@
     "react-test-renderer": "^16.7.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
+    "serve": "^11.3.0",
     "style-loader": "^0.23.1",
     "stylelint": "^9.10.1",
     "stylelint-config-prettier": "^4.0.0",

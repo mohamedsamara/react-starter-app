@@ -1,6 +1,6 @@
 /*
  *
- * TopHeader
+ * TopHeader types
  *
  */
 

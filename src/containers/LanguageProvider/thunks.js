@@ -1,6 +1,6 @@
 /*
  *
- * LanguageProvider
+ * LanguageProvider thunks
  *
  */
 
