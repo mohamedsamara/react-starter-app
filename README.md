@@ -32,6 +32,13 @@ $ npm run serve
 
 ```
 
+## Run the generators
+
+```
+$ npm run generate
+
+```
+
 ## Run test with Jest
 
 ```

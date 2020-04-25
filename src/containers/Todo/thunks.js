@@ -41,7 +41,8 @@ export function fetchTodos() {
       })
       .then(data => {
         toastr.success('Success', 'Todos Fetched Successfully');
-        dispatch(fetchTodosSuccess(data));
+
+        dispatch(fetchTodosSuccess(data.slice(170)));
         dispatch(fetchTodosRequest(false));
       })
       .catch(error => {

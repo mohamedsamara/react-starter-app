@@ -8,6 +8,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const OfflinePlugin = require('offline-plugin');
 
 const commonPaths = require('./paths');
 
@@ -131,6 +132,7 @@ module.exports = {
       filename: `${commonPaths.cssFolder}/[name].[hash].css`,
     }),
     new Webpack.optimize.ModuleConcatenationPlugin(),
+    new OfflinePlugin(),
     new WebpackPwaManifest({
       name: 'React Starter Application',
       short_name: 'ReactStarter',

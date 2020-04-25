@@ -41,7 +41,8 @@ export function fetchPosts() {
       })
       .then(data => {
         toastr.success('Success', 'Posts fetched successfully');
-        dispatch(fetchPostsSuccess(data));
+
+        dispatch(fetchPostsSuccess(data.slice(70)));
         dispatch(fetchPostsRequest(false));
       })
       .catch(error => {
